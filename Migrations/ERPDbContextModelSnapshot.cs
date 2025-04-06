@@ -224,6 +224,89 @@ namespace laboratorio1ElvisOrtiz160625.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("laboratorio1ElvisOrtiz160625.Models.Cita", b =>
+                {
+                    b.Property<Guid>("IdCita")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Estado")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("FechaHora")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid>("IdMascota")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("IdVeterinario")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Motivo")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("IdCita");
+
+                    b.HasIndex("IdMascota");
+
+                    b.ToTable("Citas");
+                });
+
+            modelBuilder.Entity("laboratorio1ElvisOrtiz160625.Models.Cliente", b =>
+                {
+                    b.Property<Guid>("IdCliente")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Correo")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Direccion")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("FechaRegistro")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Nombre")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Telefono")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("IdCliente");
+
+                    b.ToTable("Clientes");
+                });
+
+            modelBuilder.Entity("laboratorio1ElvisOrtiz160625.Models.Compra", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("Fecha")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid>("ProveedorId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<decimal>("Total")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("UsuarioId")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ProveedorId");
+
+                    b.ToTable("Compras");
+                });
+
             modelBuilder.Entity("laboratorio1ElvisOrtiz160625.Models.Departamento", b =>
                 {
                     b.Property<Guid>("DepartamentoId")
@@ -242,6 +325,179 @@ namespace laboratorio1ElvisOrtiz160625.Migrations
                     b.HasKey("DepartamentoId");
 
                     b.ToTable("tblDepartamento");
+                });
+
+            modelBuilder.Entity("laboratorio1ElvisOrtiz160625.Models.DetalleCompra", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("Cantidad")
+                        .HasColumnType("int");
+
+                    b.Property<Guid>("CompraId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<decimal>("PrecioUnitario")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<Guid>("ProductoId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<decimal>("Subtotal")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CompraId");
+
+                    b.HasIndex("ProductoId");
+
+                    b.ToTable("DetalleCompras");
+                });
+
+            modelBuilder.Entity("laboratorio1ElvisOrtiz160625.Models.DetalleFactura", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("FacturaId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<decimal>("Precio")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<Guid>("ServicioId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("FacturaId");
+
+                    b.HasIndex("ServicioId");
+
+                    b.ToTable("DetalleFacturas");
+                });
+
+            modelBuilder.Entity("laboratorio1ElvisOrtiz160625.Models.DetalleVenta", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("Cantidad")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("PrecioUnitario")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<Guid>("ProductoId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<decimal>("Subtotal")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<Guid>("VentaId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ProductoId");
+
+                    b.HasIndex("VentaId");
+
+                    b.ToTable("DetalleVentas");
+                });
+
+            modelBuilder.Entity("laboratorio1ElvisOrtiz160625.Models.Factura", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("ClienteId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("Fecha")
+                        .HasColumnType("datetime2");
+
+                    b.Property<decimal>("Total")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ClienteId");
+
+                    b.ToTable("Facturas");
+                });
+
+            modelBuilder.Entity("laboratorio1ElvisOrtiz160625.Models.HistorialMedico", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Descripcion")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("Fecha")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid>("MascotaId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Tratamiento")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("MascotaId");
+
+                    b.ToTable("HistorialesMedicos");
+                });
+
+            modelBuilder.Entity("laboratorio1ElvisOrtiz160625.Models.Mascota", b =>
+                {
+                    b.Property<Guid>("IdMascota")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int?>("Edad")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Especie")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("FechaRegistro")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid>("IdCliente")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Nombre")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal?>("Peso")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("Raza")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Sexo")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("IdMascota");
+
+                    b.HasIndex("IdCliente");
+
+                    b.ToTable("Mascotas");
                 });
 
             modelBuilder.Entity("laboratorio1ElvisOrtiz160625.Models.Municipio", b =>
@@ -340,6 +596,52 @@ namespace laboratorio1ElvisOrtiz160625.Migrations
                     b.ToTable("tblProveedors");
                 });
 
+            modelBuilder.Entity("laboratorio1ElvisOrtiz160625.Models.Servicio", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Descripcion")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Nombre")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("Precio")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Servicios");
+                });
+
+            modelBuilder.Entity("laboratorio1ElvisOrtiz160625.Models.Venta", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("ClienteId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("Fecha")
+                        .HasColumnType("datetime2");
+
+                    b.Property<decimal>("Total")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("UsuarioId")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ClienteId");
+
+                    b.ToTable("Ventas");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -391,6 +693,118 @@ namespace laboratorio1ElvisOrtiz160625.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("laboratorio1ElvisOrtiz160625.Models.Cita", b =>
+                {
+                    b.HasOne("laboratorio1ElvisOrtiz160625.Models.Mascota", "Mascota")
+                        .WithMany()
+                        .HasForeignKey("IdMascota")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Mascota");
+                });
+
+            modelBuilder.Entity("laboratorio1ElvisOrtiz160625.Models.Compra", b =>
+                {
+                    b.HasOne("laboratorio1ElvisOrtiz160625.Models.Proveedor", "Proveedor")
+                        .WithMany()
+                        .HasForeignKey("ProveedorId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Proveedor");
+                });
+
+            modelBuilder.Entity("laboratorio1ElvisOrtiz160625.Models.DetalleCompra", b =>
+                {
+                    b.HasOne("laboratorio1ElvisOrtiz160625.Models.Compra", "Compra")
+                        .WithMany()
+                        .HasForeignKey("CompraId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("laboratorio1ElvisOrtiz160625.Models.Producto", "Producto")
+                        .WithMany()
+                        .HasForeignKey("ProductoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Compra");
+
+                    b.Navigation("Producto");
+                });
+
+            modelBuilder.Entity("laboratorio1ElvisOrtiz160625.Models.DetalleFactura", b =>
+                {
+                    b.HasOne("laboratorio1ElvisOrtiz160625.Models.Factura", "Factura")
+                        .WithMany()
+                        .HasForeignKey("FacturaId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("laboratorio1ElvisOrtiz160625.Models.Servicio", "Servicio")
+                        .WithMany()
+                        .HasForeignKey("ServicioId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Factura");
+
+                    b.Navigation("Servicio");
+                });
+
+            modelBuilder.Entity("laboratorio1ElvisOrtiz160625.Models.DetalleVenta", b =>
+                {
+                    b.HasOne("laboratorio1ElvisOrtiz160625.Models.Producto", "Producto")
+                        .WithMany()
+                        .HasForeignKey("ProductoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("laboratorio1ElvisOrtiz160625.Models.Venta", "Venta")
+                        .WithMany()
+                        .HasForeignKey("VentaId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Producto");
+
+                    b.Navigation("Venta");
+                });
+
+            modelBuilder.Entity("laboratorio1ElvisOrtiz160625.Models.Factura", b =>
+                {
+                    b.HasOne("laboratorio1ElvisOrtiz160625.Models.Cliente", "Cliente")
+                        .WithMany()
+                        .HasForeignKey("ClienteId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Cliente");
+                });
+
+            modelBuilder.Entity("laboratorio1ElvisOrtiz160625.Models.HistorialMedico", b =>
+                {
+                    b.HasOne("laboratorio1ElvisOrtiz160625.Models.Mascota", "Mascota")
+                        .WithMany()
+                        .HasForeignKey("MascotaId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Mascota");
+                });
+
+            modelBuilder.Entity("laboratorio1ElvisOrtiz160625.Models.Mascota", b =>
+                {
+                    b.HasOne("laboratorio1ElvisOrtiz160625.Models.Cliente", "Cliente")
+                        .WithMany("Mascotas")
+                        .HasForeignKey("IdCliente")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Cliente");
+                });
+
             modelBuilder.Entity("laboratorio1ElvisOrtiz160625.Models.Municipio", b =>
                 {
                     b.HasOne("laboratorio1ElvisOrtiz160625.Models.Departamento", "Departamento")
@@ -409,6 +823,22 @@ namespace laboratorio1ElvisOrtiz160625.Migrations
                         .HasForeignKey("idProveedor");
 
                     b.Navigation("Proveedor");
+                });
+
+            modelBuilder.Entity("laboratorio1ElvisOrtiz160625.Models.Venta", b =>
+                {
+                    b.HasOne("laboratorio1ElvisOrtiz160625.Models.Cliente", "Cliente")
+                        .WithMany()
+                        .HasForeignKey("ClienteId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Cliente");
+                });
+
+            modelBuilder.Entity("laboratorio1ElvisOrtiz160625.Models.Cliente", b =>
+                {
+                    b.Navigation("Mascotas");
                 });
 
             modelBuilder.Entity("laboratorio1ElvisOrtiz160625.Models.Proveedor", b =>

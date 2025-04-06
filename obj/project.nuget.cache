@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WRxvlBc/NKM=",
+  "dgSpecHash": "bn+wW78p9/A=",
   "success": true,
-  "projectFilePath": "C:\\Users\\ortiz\\Documents\\Noveno Semestre\\web\\Veterinaria\\laboratorio1ElvisOrtiz160625.csproj",
+  "projectFilePath": "C:\\Users\\ortiz\\Documents\\Noveno Semestre\\web\\Final\\ProyectoFinal\\laboratorio1ElvisOrtiz160625.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ortiz\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\ortiz\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

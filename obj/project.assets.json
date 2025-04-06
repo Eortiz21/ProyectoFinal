@@ -8659,11 +8659,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ortiz\\Documents\\Noveno Semestre\\web\\Veterinaria\\laboratorio1ElvisOrtiz160625.csproj",
+      "projectUniqueName": "C:\\Users\\ortiz\\Documents\\Noveno Semestre\\web\\Final\\ProyectoFinal\\laboratorio1ElvisOrtiz160625.csproj",
       "projectName": "laboratorio1ElvisOrtiz160625",
-      "projectPath": "C:\\Users\\ortiz\\Documents\\Noveno Semestre\\web\\Veterinaria\\laboratorio1ElvisOrtiz160625.csproj",
+      "projectPath": "C:\\Users\\ortiz\\Documents\\Noveno Semestre\\web\\Final\\ProyectoFinal\\laboratorio1ElvisOrtiz160625.csproj",
       "packagesPath": "C:\\Users\\ortiz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ortiz\\Documents\\Noveno Semestre\\web\\Veterinaria\\obj\\",
+      "outputPath": "C:\\Users\\ortiz\\Documents\\Noveno Semestre\\web\\Final\\ProyectoFinal\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
