@@ -6,7 +6,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-var connectionString = builder.Configuration.GetConnectionString("ConexionLocalBD") ?? throw new InvalidOperationException("Connection string 'ConexionDesar' not found.");
+//var connectionString = builder.Configuration.GetConnectionString("ConexionLocalBD") ?? throw new InvalidOperationException("Connection string 'ConexionDesar' not found.");
+var connectionString = builder.Configuration.GetConnectionString("SomeeConexion") ?? throw new InvalidOperationException("Connection string 'ConexionDesar' not found.");
 
 
 builder.Services.AddDbContext<ERPDbContext>(options => options.UseSqlServer(connectionString), ServiceLifetime.Transient);
