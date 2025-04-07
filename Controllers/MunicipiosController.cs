@@ -21,7 +21,8 @@ namespace laboratorio1ElvisOrtiz160625.Controllers
         // GET: Municipios
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Municipios.ToListAsync());
+            var eRPDbContext = _context.Municipios.Include(m => m.Departamento);
+            return View(await eRPDbContext.ToListAsync());
         }
 
         // GET: Municipios/Details/5
@@ -33,6 +34,7 @@ namespace laboratorio1ElvisOrtiz160625.Controllers
             }
 
             var municipio = await _context.Municipios
+                .Include(m => m.Departamento)
                 .FirstOrDefaultAsync(m => m.MunicipioId == id);
             if (municipio == null)
             {
@@ -45,6 +47,7 @@ namespace laboratorio1ElvisOrtiz160625.Controllers
         // GET: Municipios/Create
         public IActionResult Create()
         {
+            ViewData["DepartamentoId"] = new SelectList(_context.tblDepartamento, "DepartamentoId", "DepartamentoId");
             return View();
         }
 
@@ -53,7 +56,7 @@ namespace laboratorio1ElvisOrtiz160625.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("MunicipioId,Nombre,Codigo")] Municipio municipio)
+        public async Task<IActionResult> Create([Bind("MunicipioId,Nombre,Codigo,DepartamentoId")] Municipio municipio)
         {
             if (ModelState.IsValid)
             {
@@ -62,6 +65,7 @@ namespace laboratorio1ElvisOrtiz160625.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["DepartamentoId"] = new SelectList(_context.tblDepartamento, "DepartamentoId", "DepartamentoId", municipio.DepartamentoId);
             return View(municipio);
         }
 
@@ -78,6 +82,7 @@ namespace laboratorio1ElvisOrtiz160625.Controllers
             {
                 return NotFound();
             }
+            ViewData["DepartamentoId"] = new SelectList(_context.tblDepartamento, "DepartamentoId", "DepartamentoId", municipio.DepartamentoId);
             return View(municipio);
         }
 
@@ -86,7 +91,7 @@ namespace laboratorio1ElvisOrtiz160625.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(Guid id, [Bind("MunicipioId,Nombre,Codigo")] Municipio municipio)
+        public async Task<IActionResult> Edit(Guid id, [Bind("MunicipioId,Nombre,Codigo,DepartamentoId")] Municipio municipio)
         {
             if (id != municipio.MunicipioId)
             {
@@ -113,6 +118,7 @@ namespace laboratorio1ElvisOrtiz160625.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["DepartamentoId"] = new SelectList(_context.tblDepartamento, "DepartamentoId", "DepartamentoId", municipio.DepartamentoId);
             return View(municipio);
         }
 
@@ -125,6 +131,7 @@ namespace laboratorio1ElvisOrtiz160625.Controllers
             }
 
             var municipio = await _context.Municipios
+                .Include(m => m.Departamento)
                 .FirstOrDefaultAsync(m => m.MunicipioId == id);
             if (municipio == null)
             {
