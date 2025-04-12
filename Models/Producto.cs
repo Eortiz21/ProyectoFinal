@@ -36,6 +36,8 @@ namespace laboratorio1ElvisOrtiz160625.Models
         [DataType(DataType.Date)]
         public DateTime? FechaVencimiento { get; set; }
 
+
+
         // Llave foránea corregida
         [ForeignKey("Proveedor")]
         public Guid? idProveedor { get; set; }  // Ahora coincide con el tipo en Proveedor

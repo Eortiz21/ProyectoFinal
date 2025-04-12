@@ -47,13 +47,11 @@ namespace laboratorio1ElvisOrtiz160625.Controllers
         // GET: Municipios/Create
         public IActionResult Create()
         {
-            ViewData["DepartamentoId"] = new SelectList(_context.tblDepartamento, "DepartamentoId", "DepartamentoId");
+            ViewData["DepartamentoId"] = new SelectList(_context.tblDepartamento.Where(d => !d.Inactivo), "DepartamentoId", "Nombre");
             return View();
         }
 
         // POST: Municipios/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("MunicipioId,Nombre,Codigo,DepartamentoId")] Municipio municipio)
@@ -65,7 +63,7 @@ namespace laboratorio1ElvisOrtiz160625.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["DepartamentoId"] = new SelectList(_context.tblDepartamento, "DepartamentoId", "DepartamentoId", municipio.DepartamentoId);
+            ViewData["DepartamentoId"] = new SelectList(_context.tblDepartamento.Where(d => !d.Inactivo), "DepartamentoId", "Nombre", municipio.DepartamentoId);
             return View(municipio);
         }
 
@@ -82,13 +80,11 @@ namespace laboratorio1ElvisOrtiz160625.Controllers
             {
                 return NotFound();
             }
-            ViewData["DepartamentoId"] = new SelectList(_context.tblDepartamento, "DepartamentoId", "DepartamentoId", municipio.DepartamentoId);
+            ViewData["DepartamentoId"] = new SelectList(_context.tblDepartamento.Where(d => !d.Inactivo), "DepartamentoId", "Nombre", municipio.DepartamentoId);
             return View(municipio);
         }
 
         // POST: Municipios/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(Guid id, [Bind("MunicipioId,Nombre,Codigo,DepartamentoId")] Municipio municipio)
@@ -118,7 +114,7 @@ namespace laboratorio1ElvisOrtiz160625.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["DepartamentoId"] = new SelectList(_context.tblDepartamento, "DepartamentoId", "DepartamentoId", municipio.DepartamentoId);
+            ViewData["DepartamentoId"] = new SelectList(_context.tblDepartamento.Where(d => !d.Inactivo), "DepartamentoId", "Nombre", municipio.DepartamentoId);
             return View(municipio);
         }
 

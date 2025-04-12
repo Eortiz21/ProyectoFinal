@@ -1,0 +1,234 @@
+﻿@model laboratorio1ElvisOrtiz160625.Models.DashboardViewModel
+@{
+    ViewData["Title"] = "Dashboard Inventario";
+}
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<h2 class="text-primary text-center my-4">Dashboard de Inventario</h2>
+
+<div class="row text-center mb-4">
+    <div class="col-md-3">
+        <div class="card bg-info text-white">
+            <div class="card-body">
+                <h5>Total de Productos</h5>
+                <h3>@Model.TotalProductos</h3>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card bg-success text-white">
+            <div class="card-body">
+                <h5>Total de Proveedores</h5>
+                <h3>@Model.TotalProveedores</h3>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card bg-warning text-dark">
+            <div class="card-body">
+                <h5>Stock Máximo</h5>
+                <h3>@Model.StockMaximo</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Sección de Gráficos -->
+<div class="row mb-5">
+    <div class="col-md-6">
+        <canvas id="graficoVencimientos"></canvas>
+    </div>
+    <div class="col-md-6">
+        <canvas id="graficoStock"></canvas>
+    </div>
+</div>
+
+<!-- Productos con más stock -->
+<h4>Productos con Mayor Stock</h4>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Categoría</th>
+            <th>Stock</th>
+            <th>Proveedor</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var p in Model.ProductosConMasExistencia)
+        {
+            <tr>
+                <td>@p.Nombre</td>
+                <td>@p.Categoria</td>
+                <td>@p.Stock</td>
+                <td>@p.Proveedor?.Nombre</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<!-- Productos con bajo stock (< 20) -->
+<h4>Productos con Bajo Stock (menor a 20)</h4>
+<table class="table table-bordered table-warning">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Stock</th>
+            <th>Proveedor</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var p in Model.ProductosBajoStock)
+        {
+            <tr>
+                <td>@p.Nombre</td>
+                <td>@p.Stock</td>
+                <td>@p.Proveedor?.Nombre</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<!-- Productos con alto stock (> 100) -->
+<h4>Productos con Alto Stock (mayor a 100)</h4>
+<table class="table table-bordered table-success">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Stock</th>
+            <th>Proveedor</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var p in Model.ProductosAltoStock)
+        {
+            <tr>
+                <td>@p.Nombre</td>
+                <td>@p.Stock</td>
+                <td>@p.Proveedor?.Nombre</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<!-- Productos expirados -->
+<h4>Productos Expirados</h4>
+<table class="table table-bordered table-danger">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Fecha Vencimiento</th>
+            <th>Proveedor</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var p in Model.ProductosExpirados)
+        {
+            <tr>
+                <td>@p.Nombre</td>
+                @p.FechaVencimiento?.ToShortDateString()
+                <td>@p.Proveedor?.Nombre</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<!-- Productos por expirar -->
+<h4>Productos por Expirar (próximos 15 días)</h4>
+<table class="table table-bordered table-warning">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Fecha Vencimiento</th>
+            <th>Proveedor</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var p in Model.ProductosPorExpirar)
+        {
+            <tr>
+                <td>@p.Nombre</td>
+                @p.FechaVencimiento?.ToShortDateString()
+                <td>@p.Proveedor?.Nombre</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<!-- Productos recién ingresados -->
+<h4>Productos Recientes (últimos 7 días)</h4>
+<table class="table table-bordered table-primary">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Fecha Ingreso</th>
+            <th>Proveedor</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var p in Model.ProductosRecientes)
+        {
+            <tr>
+                <td>@p.Nombre</td>
+                <td>@p.FechaRegistro.ToShortDateString()</td>
+                <td>@p.Proveedor?.Nombre</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<!-- Scripts para gráficos -->
+<script>
+    const vencimientosCtx = document.getElementById('graficoVencimientos').getContext('2d');
+    new Chart(vencimientosCtx, {
+        type: 'bar',
+        data: {
+            labels: ['Expirados', 'Por Expirar', 'Recientes'],
+            datasets: [{
+                label: 'Productos',
+                data: [
+    @Model.ProductosExpirados.Count,
+    @Model.ProductosPorExpirar.Count,
+    @Model.ProductosRecientes.Count
+                ],
+                backgroundColor: ['#dc3545', '#ffc107', '#198754']
+            }]
+        },
+        options: {
+            responsive: true,
+            plugins: {
+                title: {
+                    display: true,
+                    text: 'Estado de Vencimiento de Productos'
+                }
+            }
+        }
+    });
+
+    const stockCtx = document.getElementById('graficoStock').getContext('2d');
+    new Chart(stockCtx, {
+        type: 'doughnut',
+        data: {
+            labels: ['Bajo Stock (<20)', 'Alto Stock (>100)'],
+            datasets: [{
+                label: 'Productos',
+                data: [
+    @Model.ProductosBajoStock.Count,
+    @Model.ProductosAltoStock.Count
+                ],
+                backgroundColor: ['#fd7e14', '#20c997']
+            }]
+        },
+        options: {
+            responsive: true,
+            plugins: {
+                title: {
+                    display: true,
+                    text: 'Distribución de Stock'
+                }
+            }
+        }
+    });
+</script>
