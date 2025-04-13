@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "d63SnC7XHBxskN1PZI8vdxCTv5Yxx9mj0dM/3B1ya18=",
+  "Hash": "X+R1eEujKjYncpfCfxyQRv+/N1wLwPShqGqmUI+tXSo=",
   "Source": "laboratorio1ElvisOrtiz160625",
   "BasePath": "_content/laboratorio1ElvisOrtiz160625",
   "Mode": "Default",
@@ -5911,8 +5911,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "b7iojwaux1",
-      "Integrity": "JwUksNJ6/R07ZiLRoXbGeNrtlFZMFDKX4hemPiHOmCA=",
+      "Fingerprint": "hkznpd7tzk",
+      "Integrity": "0dDVKTaia8oDOBzLdm77vuDHmmZlUP3xDQujp/Xv7Vo=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
@@ -40564,7 +40564,7 @@
       ]
     },
     {
-      "Route": "lib/jquery-validation/dist/jquery.validate.min.b7iojwaux1.js",
+      "Route": "lib/jquery-validation/dist/jquery.validate.min.hkznpd7tzk.js",
       "AssetFile": "C:\\Users\\ortiz\\Documents\\Noveno Semestre\\web\\Final\\ProyectoFinal\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -40574,7 +40574,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "24601"
+          "Value": "24666"
         },
         {
           "Name": "Content-Type",
@@ -40582,11 +40582,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"JwUksNJ6/R07ZiLRoXbGeNrtlFZMFDKX4hemPiHOmCA=\""
+          "Value": "\"0dDVKTaia8oDOBzLdm77vuDHmmZlUP3xDQujp/Xv7Vo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Feb 2025 20:56:35 GMT"
+          "Value": "Sun, 13 Apr 2025 03:14:09 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -40596,7 +40596,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "b7iojwaux1"
+          "Value": "hkznpd7tzk"
         },
         {
           "Name": "label",
@@ -40604,7 +40604,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-JwUksNJ6/R07ZiLRoXbGeNrtlFZMFDKX4hemPiHOmCA="
+          "Value": "sha256-0dDVKTaia8oDOBzLdm77vuDHmmZlUP3xDQujp/Xv7Vo="
         }
       ]
     },
@@ -40619,7 +40619,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "24601"
+          "Value": "24666"
         },
         {
           "Name": "Content-Type",
@@ -40627,11 +40627,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"JwUksNJ6/R07ZiLRoXbGeNrtlFZMFDKX4hemPiHOmCA=\""
+          "Value": "\"0dDVKTaia8oDOBzLdm77vuDHmmZlUP3xDQujp/Xv7Vo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Feb 2025 20:56:35 GMT"
+          "Value": "Sun, 13 Apr 2025 03:14:09 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -40641,7 +40641,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-JwUksNJ6/R07ZiLRoXbGeNrtlFZMFDKX4hemPiHOmCA="
+          "Value": "sha256-0dDVKTaia8oDOBzLdm77vuDHmmZlUP3xDQujp/Xv7Vo="
         }
       ]
     },
