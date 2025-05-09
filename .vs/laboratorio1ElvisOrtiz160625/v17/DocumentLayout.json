@@ -1,46 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ortiz\\Documents\\Noveno Semestre\\web\\Final\\ProyectoFinal\\",
+  "WorkspaceRootPath": "C:\\Users\\kevin\\Documents\\GitHub\\ProyectoFinal\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F280788A-4AE9-4784-9347-43A3BEEBE03A}|laboratorio1ElvisOrtiz160625.csproj|c:\\users\\ortiz\\documents\\noveno semestre\\web\\final\\proyectofinal\\areas\\identity\\pages\\account\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F280788A-4AE9-4784-9347-43A3BEEBE03A}|laboratorio1ElvisOrtiz160625.csproj|solutionrelative:areas\\identity\\pages\\account\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F280788A-4AE9-4784-9347-43A3BEEBE03A}|laboratorio1ElvisOrtiz160625.csproj|c:\\users\\ortiz\\documents\\noveno semestre\\web\\final\\proyectofinal\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F280788A-4AE9-4784-9347-43A3BEEBE03A}|laboratorio1ElvisOrtiz160625.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F280788A-4AE9-4784-9347-43A3BEEBE03A}|laboratorio1ElvisOrtiz160625.csproj|c:\\users\\ortiz\\documents\\noveno semestre\\web\\final\\proyectofinal\\areas\\identity\\pages\\account\\resetpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F280788A-4AE9-4784-9347-43A3BEEBE03A}|laboratorio1ElvisOrtiz160625.csproj|solutionrelative:areas\\identity\\pages\\account\\resetpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F280788A-4AE9-4784-9347-43A3BEEBE03A}|laboratorio1ElvisOrtiz160625.csproj|c:\\users\\ortiz\\documents\\noveno semestre\\web\\final\\proyectofinal\\areas\\identity\\pages\\account\\forgotpasswordconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F280788A-4AE9-4784-9347-43A3BEEBE03A}|laboratorio1ElvisOrtiz160625.csproj|solutionrelative:areas\\identity\\pages\\account\\forgotpasswordconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F280788A-4AE9-4784-9347-43A3BEEBE03A}|laboratorio1ElvisOrtiz160625.csproj|c:\\users\\ortiz\\documents\\noveno semestre\\web\\final\\proyectofinal\\areas\\identity\\pages\\account\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F280788A-4AE9-4784-9347-43A3BEEBE03A}|laboratorio1ElvisOrtiz160625.csproj|solutionrelative:areas\\identity\\pages\\account\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F280788A-4AE9-4784-9347-43A3BEEBE03A}|laboratorio1ElvisOrtiz160625.csproj|c:\\users\\ortiz\\documents\\noveno semestre\\web\\final\\proyectofinal\\areas\\identity\\pages\\account\\registerconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F280788A-4AE9-4784-9347-43A3BEEBE03A}|laboratorio1ElvisOrtiz160625.csproj|solutionrelative:areas\\identity\\pages\\account\\registerconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F280788A-4AE9-4784-9347-43A3BEEBE03A}|laboratorio1ElvisOrtiz160625.csproj|c:\\users\\ortiz\\documents\\noveno semestre\\web\\final\\proyectofinal\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F280788A-4AE9-4784-9347-43A3BEEBE03A}|laboratorio1ElvisOrtiz160625.csproj|solutionrelative:areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F280788A-4AE9-4784-9347-43A3BEEBE03A}|laboratorio1ElvisOrtiz160625.csproj|c:\\users\\ortiz\\documents\\noveno semestre\\web\\final\\proyectofinal\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F280788A-4AE9-4784-9347-43A3BEEBE03A}|laboratorio1ElvisOrtiz160625.csproj|solutionrelative:areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F280788A-4AE9-4784-9347-43A3BEEBE03A}|laboratorio1ElvisOrtiz160625.csproj|c:\\users\\ortiz\\documents\\noveno semestre\\web\\final\\proyectofinal\\models\\dashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F280788A-4AE9-4784-9347-43A3BEEBE03A}|laboratorio1ElvisOrtiz160625.csproj|solutionrelative:models\\dashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F280788A-4AE9-4784-9347-43A3BEEBE03A}|laboratorio1ElvisOrtiz160625.csproj|c:\\users\\ortiz\\documents\\noveno semestre\\web\\final\\proyectofinal\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{F280788A-4AE9-4784-9347-43A3BEEBE03A}|laboratorio1ElvisOrtiz160625.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{F280788A-4AE9-4784-9347-43A3BEEBE03A}|laboratorio1ElvisOrtiz160625.csproj|c:\\users\\kevin\\documents\\github\\proyectofinal\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F280788A-4AE9-4784-9347-43A3BEEBE03A}|laboratorio1ElvisOrtiz160625.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,138 +14,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 43,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "DashboardViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\ortiz\\Documents\\Noveno Semestre\\web\\Final\\ProyectoFinal\\Models\\DashboardViewModel.cs",
-              "RelativeDocumentMoniker": "Models\\DashboardViewModel.cs",
-              "ToolTip": "C:\\Users\\ortiz\\Documents\\Noveno Semestre\\web\\Final\\ProyectoFinal\\Models\\DashboardViewModel.cs",
-              "RelativeToolTip": "Models\\DashboardViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-12T15:54:40.551Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ForgotPasswordConfirmation.cshtml",
-              "DocumentMoniker": "C:\\Users\\ortiz\\Documents\\Noveno Semestre\\web\\Final\\ProyectoFinal\\Areas\\Identity\\Pages\\Account\\ForgotPasswordConfirmation.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\ForgotPasswordConfirmation.cshtml",
-              "ToolTip": "C:\\Users\\ortiz\\Documents\\Noveno Semestre\\web\\Final\\ProyectoFinal\\Areas\\Identity\\Pages\\Account\\ForgotPasswordConfirmation.cshtml",
-              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\ForgotPasswordConfirmation.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-13T03:07:12.258Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ForgotPassword.cshtml",
-              "DocumentMoniker": "C:\\Users\\ortiz\\Documents\\Noveno Semestre\\web\\Final\\ProyectoFinal\\Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml",
-              "ToolTip": "C:\\Users\\ortiz\\Documents\\Noveno Semestre\\web\\Final\\ProyectoFinal\\Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml",
-              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAmwBoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-13T03:06:13.525Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ResetPassword.cshtml",
-              "DocumentMoniker": "C:\\Users\\ortiz\\Documents\\Noveno Semestre\\web\\Final\\ProyectoFinal\\Areas\\Identity\\Pages\\Account\\ResetPassword.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\ResetPassword.cshtml",
-              "ToolTip": "C:\\Users\\ortiz\\Documents\\Noveno Semestre\\web\\Final\\ProyectoFinal\\Areas\\Identity\\Pages\\Account\\ResetPassword.cshtml",
-              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\ResetPassword.cshtml",
-              "ViewState": "AgIAAFEAAAAAAAAAAAAmwFoAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-13T03:04:13.469Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ortiz\\Documents\\Noveno Semestre\\web\\Final\\ProyectoFinal\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\ortiz\\Documents\\Noveno Semestre\\web\\Final\\ProyectoFinal\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAswDEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-13T03:14:38.043Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Logout.cshtml",
-              "DocumentMoniker": "C:\\Users\\ortiz\\Documents\\Noveno Semestre\\web\\Final\\ProyectoFinal\\Areas\\Identity\\Pages\\Account\\Logout.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Logout.cshtml",
-              "ToolTip": "C:\\Users\\ortiz\\Documents\\Noveno Semestre\\web\\Final\\ProyectoFinal\\Areas\\Identity\\Pages\\Account\\Logout.cshtml",
-              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Logout.cshtml",
-              "ViewState": "AgIAADEAAAAAAAAAAAAuwDwAAAAHAAAAAAAAAA==",
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\kevin\\Documents\\GitHub\\ProyectoFinal\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\kevin\\Documents\\GitHub\\ProyectoFinal\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAALgBAAAAAAAAAAApwMYBAABtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-13T03:02:32.825Z",
+              "WhenOpened": "2025-05-09T00:57:46.274Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "RegisterConfirmation.cshtml",
-              "DocumentMoniker": "C:\\Users\\ortiz\\Documents\\Noveno Semestre\\web\\Final\\ProyectoFinal\\Areas\\Identity\\Pages\\Account\\RegisterConfirmation.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\RegisterConfirmation.cshtml",
-              "ToolTip": "C:\\Users\\ortiz\\Documents\\Noveno Semestre\\web\\Final\\ProyectoFinal\\Areas\\Identity\\Pages\\Account\\RegisterConfirmation.cshtml",
-              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\RegisterConfirmation.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-13T02:47:10.859Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Register.cshtml",
-              "DocumentMoniker": "C:\\Users\\ortiz\\Documents\\Noveno Semestre\\web\\Final\\ProyectoFinal\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "ToolTip": "C:\\Users\\ortiz\\Documents\\Noveno Semestre\\web\\Final\\ProyectoFinal\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "ViewState": "AgIAAGYAAAAAAAAAAAAuwIUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-13T02:46:59.733Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\ortiz\\Documents\\Noveno Semestre\\web\\Final\\ProyectoFinal\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Login.cshtml",
-              "ToolTip": "C:\\Users\\ortiz\\Documents\\Noveno Semestre\\web\\Final\\ProyectoFinal\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
-              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Login.cshtml",
-              "ViewState": "AgIAAHEAAAAAAAAAAAAuwJAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-13T02:40:47.472Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\ortiz\\Documents\\Noveno Semestre\\web\\Final\\ProyectoFinal\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\ortiz\\Documents\\Noveno Semestre\\web\\Final\\ProyectoFinal\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-12T22:13:02.111Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
             }
           ]
         }

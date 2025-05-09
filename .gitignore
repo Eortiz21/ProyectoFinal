@@ -1,0 +1,55 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.VC.db
+*.VC.opendb
+*.cache
+*.pdb
+
+# Build results
+[Bb]in/
+[Oo]bj/
+*.exe
+*.dll
+*.app
+*.log
+
+# NuGet
+*.nupkg
+packages/
+project.lock.json
+project.assets.json
+
+# Resharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# Rider
+.idea/
+
+# TFS
+$tf/
+
+# Others
+*.class
+*.pyc
+*.tmp
+*.DS_Store
+*.swp
+*.bak
+*.orig
+*.scc
+
+# Git directories
+*.orig
+*.rej
+
+# Logs
+*.log
+*.vsidx
+*.sdf
+*.ipch
