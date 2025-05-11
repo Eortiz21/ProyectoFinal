@@ -828,6 +828,18 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-JjQldx1m/KhUP4t0kDY09wCxY9H16rAwNSIsmgAj1KI="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"318"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022JjQldx1m/KhUP4t0kDY09wCxY9H16rAwNSIsmgAj1KI=\u0022"},{"Name":"Last-Modified","Value":"Sun, 31 Oct 2021 15:45:05 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/laboratorio1ElvisOrtiz160625/images/Logo.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\Logo.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-pqkFiHKzI66k8n\u002B2FgsSpO2CT2KD1YoMPecWxA8JQoE="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"31413"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022pqkFiHKzI66k8n\u002B2FgsSpO2CT2KD1YoMPecWxA8JQoE=\u0022"},{"Name":"Last-Modified","Value":"Sun, 11 May 2025 20:32:02 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/laboratorio1ElvisOrtiz160625/images/Logo.qk782rv0bt.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\Logo.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"qk782rv0bt"},{"Name":"integrity","Value":"sha256-pqkFiHKzI66k8n\u002B2FgsSpO2CT2KD1YoMPecWxA8JQoE="},{"Name":"label","Value":"_content/laboratorio1ElvisOrtiz160625/images/Logo.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"31413"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022pqkFiHKzI66k8n\u002B2FgsSpO2CT2KD1YoMPecWxA8JQoE=\u0022"},{"Name":"Last-Modified","Value":"Sun, 11 May 2025 20:32:02 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/laboratorio1ElvisOrtiz160625/images/logo.svg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\logo.svg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -10083,14 +10095,14 @@
     <StaticWebAssetEndpoint Include="_content/laboratorio1ElvisOrtiz160625/vendors/js/vendor.bundle.base.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\vendors\js\vendor.bundle.base.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-DJmU0C3Ge4nAyg5ejSfUculR/08OHLLAK1SrGwq\u002BdGg="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"187465"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022DJmU0C3Ge4nAyg5ejSfUculR/08OHLLAK1SrGwq\u002BdGg=\u0022"},{"Name":"Last-Modified","Value":"Sun, 31 Oct 2021 15:45:05 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-i5wxuNJ/wnjo5j2CMfF/QjYRh0aZ24YS9GPNRWnl6Fs="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"187495"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022i5wxuNJ/wnjo5j2CMfF/QjYRh0aZ24YS9GPNRWnl6Fs=\u0022"},{"Name":"Last-Modified","Value":"Sun, 11 May 2025 20:31:57 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/laboratorio1ElvisOrtiz160625/vendors/js/vendor.bundle.base.of4ioqka7c.js">
+    <StaticWebAssetEndpoint Include="_content/laboratorio1ElvisOrtiz160625/vendors/js/vendor.bundle.base.lwmyf75eoc.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\vendors\js\vendor.bundle.base.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"of4ioqka7c"},{"Name":"integrity","Value":"sha256-DJmU0C3Ge4nAyg5ejSfUculR/08OHLLAK1SrGwq\u002BdGg="},{"Name":"label","Value":"_content/laboratorio1ElvisOrtiz160625/vendors/js/vendor.bundle.base.js"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"187465"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022DJmU0C3Ge4nAyg5ejSfUculR/08OHLLAK1SrGwq\u002BdGg=\u0022"},{"Name":"Last-Modified","Value":"Sun, 31 Oct 2021 15:45:05 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"lwmyf75eoc"},{"Name":"integrity","Value":"sha256-i5wxuNJ/wnjo5j2CMfF/QjYRh0aZ24YS9GPNRWnl6Fs="},{"Name":"label","Value":"_content/laboratorio1ElvisOrtiz160625/vendors/js/vendor.bundle.base.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"187495"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022i5wxuNJ/wnjo5j2CMfF/QjYRh0aZ24YS9GPNRWnl6Fs=\u0022"},{"Name":"Last-Modified","Value":"Sun, 11 May 2025 20:31:57 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/laboratorio1ElvisOrtiz160625/vendors/jsgrid/jsgrid-theme.min.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\vendors\jsgrid\jsgrid-theme.min.css'))</AssetFile>
