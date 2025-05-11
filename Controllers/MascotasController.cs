@@ -6,9 +6,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using laboratorio1ElvisOrtiz160625.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace laboratorio1ElvisOrtiz160625.Controllers
 {
+    [Authorize]
     public class MascotasController : Controller
     {
         private readonly ERPDbContext _context;
