@@ -64,6 +64,7 @@ wwwroot\images\lightbox\thumb-v-v-1.jpg
 wwwroot\images\lightbox\thumb-v-v-2.jpg
 wwwroot\images\lightbox\thumb-v-y-1.jpg
 wwwroot\images\lightbox\thumb-v-y-2.jpg
+wwwroot\images\Logo.jpg
 wwwroot\images\logo.svg
 wwwroot\images\logo-light.svg
 wwwroot\images\logo-mini.svg
