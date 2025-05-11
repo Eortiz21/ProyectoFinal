@@ -10096,13 +10096,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\vendors\js\vendor.bundle.base.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-i5wxuNJ/wnjo5j2CMfF/QjYRh0aZ24YS9GPNRWnl6Fs="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"187495"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022i5wxuNJ/wnjo5j2CMfF/QjYRh0aZ24YS9GPNRWnl6Fs=\u0022"},{"Name":"Last-Modified","Value":"Sun, 11 May 2025 20:31:57 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"187495"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022i5wxuNJ/wnjo5j2CMfF/QjYRh0aZ24YS9GPNRWnl6Fs=\u0022"},{"Name":"Last-Modified","Value":"Sun, 11 May 2025 20:55:22 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/laboratorio1ElvisOrtiz160625/vendors/js/vendor.bundle.base.lwmyf75eoc.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\vendors\js\vendor.bundle.base.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"lwmyf75eoc"},{"Name":"integrity","Value":"sha256-i5wxuNJ/wnjo5j2CMfF/QjYRh0aZ24YS9GPNRWnl6Fs="},{"Name":"label","Value":"_content/laboratorio1ElvisOrtiz160625/vendors/js/vendor.bundle.base.js"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"187495"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022i5wxuNJ/wnjo5j2CMfF/QjYRh0aZ24YS9GPNRWnl6Fs=\u0022"},{"Name":"Last-Modified","Value":"Sun, 11 May 2025 20:31:57 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"187495"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022i5wxuNJ/wnjo5j2CMfF/QjYRh0aZ24YS9GPNRWnl6Fs=\u0022"},{"Name":"Last-Modified","Value":"Sun, 11 May 2025 20:55:22 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/laboratorio1ElvisOrtiz160625/vendors/jsgrid/jsgrid-theme.min.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\vendors\jsgrid\jsgrid-theme.min.css'))</AssetFile>

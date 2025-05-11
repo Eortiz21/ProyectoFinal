@@ -7,12 +7,20 @@
       "RelativeMoniker": "D:0:0:{F280788A-4AE9-4784-9347-43A3BEEBE03A}|laboratorio1ElvisOrtiz160625.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F280788A-4AE9-4784-9347-43A3BEEBE03A}|laboratorio1ElvisOrtiz160625.csproj|c:\\users\\ortiz\\documents\\noveno semestre\\web\\final\\proyectofinal\\views\\historialmedicoes\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F280788A-4AE9-4784-9347-43A3BEEBE03A}|laboratorio1ElvisOrtiz160625.csproj|solutionrelative:views\\historialmedicoes\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{F280788A-4AE9-4784-9347-43A3BEEBE03A}|laboratorio1ElvisOrtiz160625.csproj|c:\\users\\ortiz\\documents\\noveno semestre\\web\\final\\proyectofinal\\views\\productoes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F280788A-4AE9-4784-9347-43A3BEEBE03A}|laboratorio1ElvisOrtiz160625.csproj|solutionrelative:views\\productoes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F280788A-4AE9-4784-9347-43A3BEEBE03A}|laboratorio1ElvisOrtiz160625.csproj|c:\\users\\ortiz\\documents\\noveno semestre\\web\\final\\proyectofinal\\views\\proveedors\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F280788A-4AE9-4784-9347-43A3BEEBE03A}|laboratorio1ElvisOrtiz160625.csproj|solutionrelative:views\\proveedors\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F280788A-4AE9-4784-9347-43A3BEEBE03A}|laboratorio1ElvisOrtiz160625.csproj|c:\\users\\ortiz\\documents\\noveno semestre\\web\\final\\proyectofinal\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F280788A-4AE9-4784-9347-43A3BEEBE03A}|laboratorio1ElvisOrtiz160625.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F280788A-4AE9-4784-9347-43A3BEEBE03A}|laboratorio1ElvisOrtiz160625.csproj|c:\\users\\ortiz\\documents\\noveno semestre\\web\\final\\proyectofinal\\views\\productoes\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F280788A-4AE9-4784-9347-43A3BEEBE03A}|laboratorio1ElvisOrtiz160625.csproj|solutionrelative:views\\productoes\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,31 +30,46 @@
       "DocumentGroups": [
         {
           "DockedWidth": 43,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\ortiz\\Documents\\Noveno Semestre\\web\\Final\\ProyectoFinal\\Views\\HistorialMedicoes\\Create.cshtml",
-              "RelativeDocumentMoniker": "Views\\HistorialMedicoes\\Create.cshtml",
-              "ToolTip": "C:\\Users\\ortiz\\Documents\\Noveno Semestre\\web\\Final\\ProyectoFinal\\Views\\HistorialMedicoes\\Create.cshtml",
-              "RelativeToolTip": "Views\\HistorialMedicoes\\Create.cshtml",
-              "ViewState": "AgIAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ortiz\\Documents\\Noveno Semestre\\web\\Final\\ProyectoFinal\\Views\\Proveedors\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Proveedors\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ortiz\\Documents\\Noveno Semestre\\web\\Final\\ProyectoFinal\\Views\\Proveedors\\Index.cshtml",
+              "RelativeToolTip": "Views\\Proveedors\\Index.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAswDUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-11T20:45:00.35Z"
+              "WhenOpened": "2025-05-11T21:03:27.371Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ortiz\\Documents\\Noveno Semestre\\web\\Final\\ProyectoFinal\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\ortiz\\Documents\\Noveno Semestre\\web\\Final\\ProyectoFinal\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-11T20:36:09.117Z"
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ortiz\\Documents\\Noveno Semestre\\web\\Final\\ProyectoFinal\\Views\\Productoes\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Productoes\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ortiz\\Documents\\Noveno Semestre\\web\\Final\\ProyectoFinal\\Views\\Productoes\\Index.cshtml",
+              "RelativeToolTip": "Views\\Productoes\\Index.cshtml",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAAAGAAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-11T21:01:08.239Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\ortiz\\Documents\\Noveno Semestre\\web\\Final\\ProyectoFinal\\Views\\Productoes\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Productoes\\Create.cshtml",
+              "ToolTip": "C:\\Users\\ortiz\\Documents\\Noveno Semestre\\web\\Final\\ProyectoFinal\\Views\\Productoes\\Create.cshtml",
+              "RelativeToolTip": "Views\\Productoes\\Create.cshtml",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAswC4AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-11T20:56:46.043Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -56,9 +79,22 @@
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\ortiz\\Documents\\Noveno Semestre\\web\\Final\\ProyectoFinal\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAJ0BAAAAAAAAAAAwwLABAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAOsCAAAAAAAAAAAswAsDAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-05-09T00:57:46.274Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ortiz\\Documents\\Noveno Semestre\\web\\Final\\ProyectoFinal\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\ortiz\\Documents\\Noveno Semestre\\web\\Final\\ProyectoFinal\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T20:36:09.117Z",
               "EditorCaption": ""
             }
           ]
