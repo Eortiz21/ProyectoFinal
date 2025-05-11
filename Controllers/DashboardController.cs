@@ -4,9 +4,11 @@ using laboratorio1ElvisOrtiz160625.Models;
 using System;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 
 namespace laboratorio1ElvisOrtiz160625.Controllers
 {
+    [Authorize]
     public class DashboardController : Controller
     {
         private readonly ERPDbContext _context;
