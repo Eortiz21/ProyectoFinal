@@ -21,11 +21,21 @@ namespace laboratorio1ElvisOrtiz160625.Controllers
         }
 
         // GET: Productoes
-        public async Task<IActionResult> Index()
+        // GET: Productoes
+        public async Task<IActionResult> Index(string buscar)
         {
-            var eRPDbContext = _context.tblProductos.Include(p => p.Proveedor);
-            return View(await eRPDbContext.ToListAsync());
+            var productos = _context.tblProductos.Include(p => p.Proveedor).AsQueryable();
+
+            if (!string.IsNullOrEmpty(buscar))
+            {
+                productos = productos.Where(p => p.Nombre.Contains(buscar));
+            }
+
+            ViewData["Busqueda"] = buscar;
+
+            return View(await productos.ToListAsync());
         }
+
 
         // GET: Productoes/Details/5
         public async Task<IActionResult> Details(Guid? id)
@@ -45,6 +55,7 @@ namespace laboratorio1ElvisOrtiz160625.Controllers
 
             return View(producto);
         }
+        // GET: Productoes buscar
 
         // GET: Productoes/Create
         public IActionResult Create()

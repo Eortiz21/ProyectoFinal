@@ -21,10 +21,23 @@ namespace laboratorio1ElvisOrtiz160625.Controllers
         }
 
         // GET: Proveedors
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string buscar)
         {
-            return View(await _context.tblProveedors.ToListAsync());
+            var proveedores = from p in _context.tblProveedors select p;
+
+            if (!string.IsNullOrEmpty(buscar))
+            {
+                proveedores = proveedores.Where(p =>
+                    p.Nombre.Contains(buscar) ||
+                    p.Telefono.Contains(buscar) ||
+                    p.Direccion.Contains(buscar) ||
+                    p.Correo.Contains(buscar));
+            }
+
+            ViewData["Busqueda"] = buscar;
+            return View(await proveedores.ToListAsync());
         }
+
 
         // GET: Proveedors/Details/5
         public async Task<IActionResult> Details(Guid? id)
