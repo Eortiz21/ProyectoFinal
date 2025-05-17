@@ -7,15 +7,15 @@
 *.VC.db
 *.VC.opendb
 *.cache
-*.pdb
 
 # Build results
-[Bb]in/
-[Oo]bj/
+bin/
+obj/
 *.exe
 *.dll
 *.app
 *.log
+*.pdb
 
 # NuGet
 *.nupkg
@@ -34,7 +34,7 @@ _ReSharper*/
 # TFS
 $tf/
 
-# Others
+# OS / Misc
 *.class
 *.pyc
 *.tmp
@@ -43,13 +43,22 @@ $tf/
 *.bak
 *.orig
 *.scc
-
-# Git directories
-*.orig
 *.rej
 
-# Logs
-*.log
+# IntelliSense / Indexing
 *.vsidx
 *.sdf
 *.ipch
+
+bin/
+obj/
+.vs/
+*.user
+*.suo
+*.pdb
+
+# Visual Studio files
+.vs/
+bin/
+obj/
+*.user
