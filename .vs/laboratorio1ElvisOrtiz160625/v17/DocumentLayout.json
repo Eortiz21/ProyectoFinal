@@ -1,26 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\kevin\\Documents\\GitHub\\ProyectoFinal\\",
+  "WorkspaceRootPath": "C:\\Users\\ortiz\\Documents\\Noveno Semestre\\web\\Final\\ProyectoFinal\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F280788A-4AE9-4784-9347-43A3BEEBE03A}|laboratorio1ElvisOrtiz160625.csproj|c:\\users\\kevin\\documents\\github\\proyectofinal\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{F280788A-4AE9-4784-9347-43A3BEEBE03A}|laboratorio1ElvisOrtiz160625.csproj|c:\\users\\ortiz\\documents\\noveno semestre\\web\\final\\proyectofinal\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{F280788A-4AE9-4784-9347-43A3BEEBE03A}|laboratorio1ElvisOrtiz160625.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F280788A-4AE9-4784-9347-43A3BEEBE03A}|laboratorio1ElvisOrtiz160625.csproj|c:\\users\\kevin\\documents\\github\\proyectofinal\\views\\historialmedicoes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F280788A-4AE9-4784-9347-43A3BEEBE03A}|laboratorio1ElvisOrtiz160625.csproj|solutionrelative:views\\historialmedicoes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{F280788A-4AE9-4784-9347-43A3BEEBE03A}|laboratorio1ElvisOrtiz160625.csproj|c:\\users\\ortiz\\documents\\noveno semestre\\web\\final\\proyectofinal\\controllers\\proveedorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F280788A-4AE9-4784-9347-43A3BEEBE03A}|laboratorio1ElvisOrtiz160625.csproj|solutionrelative:controllers\\proveedorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F280788A-4AE9-4784-9347-43A3BEEBE03A}|laboratorio1ElvisOrtiz160625.csproj|c:\\users\\kevin\\documents\\github\\proyectofinal\\views\\servicios\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F280788A-4AE9-4784-9347-43A3BEEBE03A}|laboratorio1ElvisOrtiz160625.csproj|solutionrelative:views\\servicios\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{F280788A-4AE9-4784-9347-43A3BEEBE03A}|laboratorio1ElvisOrtiz160625.csproj|c:\\users\\ortiz\\documents\\noveno semestre\\web\\final\\proyectofinal\\views\\proveedors\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F280788A-4AE9-4784-9347-43A3BEEBE03A}|laboratorio1ElvisOrtiz160625.csproj|solutionrelative:views\\proveedors\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F280788A-4AE9-4784-9347-43A3BEEBE03A}|laboratorio1ElvisOrtiz160625.csproj|c:\\users\\kevin\\documents\\github\\proyectofinal\\views\\productoes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F280788A-4AE9-4784-9347-43A3BEEBE03A}|laboratorio1ElvisOrtiz160625.csproj|solutionrelative:views\\productoes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{F280788A-4AE9-4784-9347-43A3BEEBE03A}|laboratorio1ElvisOrtiz160625.csproj|c:\\users\\ortiz\\documents\\noveno semestre\\web\\final\\proyectofinal\\views\\proveedors\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F280788A-4AE9-4784-9347-43A3BEEBE03A}|laboratorio1ElvisOrtiz160625.csproj|solutionrelative:views\\proveedors\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F280788A-4AE9-4784-9347-43A3BEEBE03A}|laboratorio1ElvisOrtiz160625.csproj|c:\\users\\kevin\\documents\\github\\proyectofinal\\views\\productoes\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F280788A-4AE9-4784-9347-43A3BEEBE03A}|laboratorio1ElvisOrtiz160625.csproj|solutionrelative:views\\productoes\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{F280788A-4AE9-4784-9347-43A3BEEBE03A}|laboratorio1ElvisOrtiz160625.csproj|c:\\users\\ortiz\\documents\\noveno semestre\\web\\final\\proyectofinal\\views\\proveedors\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F280788A-4AE9-4784-9347-43A3BEEBE03A}|laboratorio1ElvisOrtiz160625.csproj|solutionrelative:views\\proveedors\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F280788A-4AE9-4784-9347-43A3BEEBE03A}|laboratorio1ElvisOrtiz160625.csproj|c:\\users\\ortiz\\documents\\noveno semestre\\web\\final\\proyectofinal\\views\\proveedors\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F280788A-4AE9-4784-9347-43A3BEEBE03A}|laboratorio1ElvisOrtiz160625.csproj|solutionrelative:views\\proveedors\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,75 +34,84 @@
       "DocumentGroups": [
         {
           "DockedWidth": 43,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\kevin\\Documents\\GitHub\\ProyectoFinal\\Views\\HistorialMedicoes\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\HistorialMedicoes\\Index.cshtml",
-              "ToolTip": "C:\\Users\\kevin\\Documents\\GitHub\\ProyectoFinal\\Views\\HistorialMedicoes\\Index.cshtml",
-              "RelativeToolTip": "Views\\HistorialMedicoes\\Index.cshtml",
-              "ViewState": "AQIAAIQAAAAAAAAAAAAgwJ8AAAAAAAAA",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\ortiz\\Documents\\Noveno Semestre\\web\\Final\\ProyectoFinal\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\ortiz\\Documents\\Noveno Semestre\\web\\Final\\ProyectoFinal\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-17T03:47:49.609Z",
+              "WhenOpened": "2025-05-18T22:21:33.411Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\kevin\\Documents\\GitHub\\ProyectoFinal\\Views\\Servicios\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Servicios\\Index.cshtml",
-              "ToolTip": "C:\\Users\\kevin\\Documents\\GitHub\\ProyectoFinal\\Views\\Servicios\\Index.cshtml",
-              "RelativeToolTip": "Views\\Servicios\\Index.cshtml",
-              "ViewState": "AQIAAIIAAAAAAAAAAAAgwJ0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-17T03:47:13.214Z",
+              "DocumentIndex": 1,
+              "Title": "ProveedorsController.cs",
+              "DocumentMoniker": "C:\\Users\\ortiz\\Documents\\Noveno Semestre\\web\\Final\\ProyectoFinal\\Controllers\\ProveedorsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProveedorsController.cs",
+              "ToolTip": "C:\\Users\\ortiz\\Documents\\Noveno Semestre\\web\\Final\\ProyectoFinal\\Controllers\\ProveedorsController.cs",
+              "RelativeToolTip": "Controllers\\ProveedorsController.cs",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAswHoAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T22:17:16.957Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\kevin\\Documents\\GitHub\\ProyectoFinal\\Views\\Productoes\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Productoes\\Index.cshtml",
-              "ToolTip": "C:\\Users\\kevin\\Documents\\GitHub\\ProyectoFinal\\Views\\Productoes\\Index.cshtml",
-              "RelativeToolTip": "Views\\Productoes\\Index.cshtml",
-              "ViewState": "AQIAAJAAAAAAAAAAAAAgwKsAAAAAAAAA",
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\ortiz\\Documents\\Noveno Semestre\\web\\Final\\ProyectoFinal\\Views\\Proveedors\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Proveedors\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\ortiz\\Documents\\Noveno Semestre\\web\\Final\\ProyectoFinal\\Views\\Proveedors\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Proveedors\\Edit.cshtml",
+              "ViewState": "AgIAABkAAAAAAAAAAAAuwDoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-11T21:01:08.239Z",
+              "WhenOpened": "2025-05-18T22:14:09.7Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\ortiz\\Documents\\Noveno Semestre\\web\\Final\\ProyectoFinal\\Views\\Proveedors\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Views\\Proveedors\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\ortiz\\Documents\\Noveno Semestre\\web\\Final\\ProyectoFinal\\Views\\Proveedors\\Delete.cshtml",
+              "RelativeToolTip": "Views\\Proveedors\\Delete.cshtml",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAuwCMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-18T22:13:55.154Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\ortiz\\Documents\\Noveno Semestre\\web\\Final\\ProyectoFinal\\Views\\Proveedors\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Proveedors\\Details.cshtml",
+              "ToolTip": "C:\\Users\\ortiz\\Documents\\Noveno Semestre\\web\\Final\\ProyectoFinal\\Views\\Proveedors\\Details.cshtml",
+              "RelativeToolTip": "Views\\Proveedors\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-18T22:13:54.35Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\kevin\\Documents\\GitHub\\ProyectoFinal\\Views\\Productoes\\Create.cshtml",
-              "RelativeDocumentMoniker": "Views\\Productoes\\Create.cshtml",
-              "ToolTip": "C:\\Users\\kevin\\Documents\\GitHub\\ProyectoFinal\\Views\\Productoes\\Create.cshtml",
-              "RelativeToolTip": "Views\\Productoes\\Create.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentMoniker": "C:\\Users\\ortiz\\Documents\\Noveno Semestre\\web\\Final\\ProyectoFinal\\Views\\Proveedors\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Proveedors\\Create.cshtml",
+              "ToolTip": "C:\\Users\\ortiz\\Documents\\Noveno Semestre\\web\\Final\\ProyectoFinal\\Views\\Proveedors\\Create.cshtml",
+              "RelativeToolTip": "Views\\Proveedors\\Create.cshtml",
+              "ViewState": "AgIAABcAAAAAAAAAAAAuwDgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-11T20:56:46.043Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\kevin\\Documents\\GitHub\\ProyectoFinal\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\kevin\\Documents\\GitHub\\ProyectoFinal\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAABoAAAAAAAAAAAApwCwAAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-09T00:57:46.274Z",
+              "WhenOpened": "2025-05-18T22:13:41.783Z",
               "EditorCaption": ""
             }
           ]

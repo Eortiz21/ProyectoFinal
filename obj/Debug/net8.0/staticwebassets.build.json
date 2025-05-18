@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "DEOg44r5pkfv/evtyaptbzAacCB+pv6AtOAtlxf7DMM=",
+  "Hash": "dXOkBJvmix0wgkdS4f3ft6XZ6AAd7vV+GBECUDGjHdU=",
   "Source": "laboratorio1ElvisOrtiz160625",
   "BasePath": "_content/laboratorio1ElvisOrtiz160625",
   "Mode": "Default",
@@ -3727,8 +3727,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "0ehvp1z3aj",
-      "Integrity": "OEmeE9gTIiGGu7L25GQvfOX7rzrtPg3xF84ntN8X/20=",
+      "Fingerprint": "xdp6j9azu0",
+      "Integrity": "Bd3SXpmvSjA0rFYPGUDrwSjywRVFkxGU2PZTq6qckIo=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\data-table.js"
@@ -4672,8 +4672,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "wwaqocehfk",
-      "Integrity": "QF4C4ETUM3zbt00A7j4UGSu7l9g4WH4xFImwgAZB7pI=",
+      "Fingerprint": "8g8e8our9a",
+      "Integrity": "uNUDAq1Dh4nDxIp2z65GfaMAhI57SpP0l3V4oZcPfIo=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\template.js"
@@ -31930,51 +31930,6 @@
       ]
     },
     {
-      "Route": "js/data-table.0ehvp1z3aj.js",
-      "AssetFile": "C:\\Users\\ortiz\\Documents\\Noveno Semestre\\web\\Final\\ProyectoFinal\\wwwroot\\js\\data-table.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "821"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"OEmeE9gTIiGGu7L25GQvfOX7rzrtPg3xF84ntN8X/20=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 31 Oct 2021 15:45:05 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "0ehvp1z3aj"
-        },
-        {
-          "Name": "label",
-          "Value": "js/data-table.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-OEmeE9gTIiGGu7L25GQvfOX7rzrtPg3xF84ntN8X/20="
-        }
-      ]
-    },
-    {
       "Route": "js/data-table.js",
       "AssetFile": "C:\\Users\\ortiz\\Documents\\Noveno Semestre\\web\\Final\\ProyectoFinal\\wwwroot\\js\\data-table.js",
       "Selectors": [],
@@ -31985,7 +31940,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "821"
+          "Value": "824"
         },
         {
           "Name": "Content-Type",
@@ -31993,11 +31948,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"OEmeE9gTIiGGu7L25GQvfOX7rzrtPg3xF84ntN8X/20=\""
+          "Value": "\"Bd3SXpmvSjA0rFYPGUDrwSjywRVFkxGU2PZTq6qckIo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 31 Oct 2021 15:45:05 GMT"
+          "Value": "Sun, 18 May 2025 21:21:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -32007,7 +31962,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-OEmeE9gTIiGGu7L25GQvfOX7rzrtPg3xF84ntN8X/20="
+          "Value": "sha256-Bd3SXpmvSjA0rFYPGUDrwSjywRVFkxGU2PZTq6qckIo="
+        }
+      ]
+    },
+    {
+      "Route": "js/data-table.xdp6j9azu0.js",
+      "AssetFile": "C:\\Users\\ortiz\\Documents\\Noveno Semestre\\web\\Final\\ProyectoFinal\\wwwroot\\js\\data-table.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "824"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Bd3SXpmvSjA0rFYPGUDrwSjywRVFkxGU2PZTq6qckIo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 May 2025 21:21:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xdp6j9azu0"
+        },
+        {
+          "Name": "label",
+          "Value": "js/data-table.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Bd3SXpmvSjA0rFYPGUDrwSjywRVFkxGU2PZTq6qckIo="
         }
       ]
     },
@@ -35620,6 +35620,51 @@
       ]
     },
     {
+      "Route": "js/template.8g8e8our9a.js",
+      "AssetFile": "C:\\Users\\ortiz\\Documents\\Noveno Semestre\\web\\Final\\ProyectoFinal\\wwwroot\\js\\template.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5710"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uNUDAq1Dh4nDxIp2z65GfaMAhI57SpP0l3V4oZcPfIo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 May 2025 21:06:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8g8e8our9a"
+        },
+        {
+          "Name": "label",
+          "Value": "js/template.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-uNUDAq1Dh4nDxIp2z65GfaMAhI57SpP0l3V4oZcPfIo="
+        }
+      ]
+    },
+    {
       "Route": "js/template.js",
       "AssetFile": "C:\\Users\\ortiz\\Documents\\Noveno Semestre\\web\\Final\\ProyectoFinal\\wwwroot\\js\\template.js",
       "Selectors": [],
@@ -35630,7 +35675,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5555"
+          "Value": "5710"
         },
         {
           "Name": "Content-Type",
@@ -35638,11 +35683,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"QF4C4ETUM3zbt00A7j4UGSu7l9g4WH4xFImwgAZB7pI=\""
+          "Value": "\"uNUDAq1Dh4nDxIp2z65GfaMAhI57SpP0l3V4oZcPfIo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 31 Oct 2021 15:45:05 GMT"
+          "Value": "Sun, 18 May 2025 21:06:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -35652,52 +35697,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-QF4C4ETUM3zbt00A7j4UGSu7l9g4WH4xFImwgAZB7pI="
-        }
-      ]
-    },
-    {
-      "Route": "js/template.wwaqocehfk.js",
-      "AssetFile": "C:\\Users\\ortiz\\Documents\\Noveno Semestre\\web\\Final\\ProyectoFinal\\wwwroot\\js\\template.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "5555"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"QF4C4ETUM3zbt00A7j4UGSu7l9g4WH4xFImwgAZB7pI=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 31 Oct 2021 15:45:05 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "wwaqocehfk"
-        },
-        {
-          "Name": "label",
-          "Value": "js/template.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-QF4C4ETUM3zbt00A7j4UGSu7l9g4WH4xFImwgAZB7pI="
+          "Value": "sha256-uNUDAq1Dh4nDxIp2z65GfaMAhI57SpP0l3V4oZcPfIo="
         }
       ]
     },
@@ -41144,7 +41144,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 31 Oct 2021 15:45:05 GMT"
+          "Value": "Sun, 18 May 2025 21:08:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -41189,7 +41189,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 31 Oct 2021 15:45:05 GMT"
+          "Value": "Sun, 18 May 2025 21:08:56 GMT"
         },
         {
           "Name": "Cache-Control",
