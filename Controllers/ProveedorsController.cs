@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using laboratorio1ElvisOrtiz160625.Models;
 using Microsoft.AspNetCore.Authorization;
@@ -23,7 +21,7 @@ namespace laboratorio1ElvisOrtiz160625.Controllers
         // GET: Proveedors
         public async Task<IActionResult> Index(string buscar)
         {
-            var proveedores = from p in _context.tblProveedors select p;
+            var proveedores = _context.tblProveedors.AsQueryable();
 
             if (!string.IsNullOrEmpty(buscar))
             {
@@ -35,24 +33,18 @@ namespace laboratorio1ElvisOrtiz160625.Controllers
             }
 
             ViewData["Busqueda"] = buscar;
+
             return View(await proveedores.ToListAsync());
         }
-
 
         // GET: Proveedors/Details/5
         public async Task<IActionResult> Details(Guid? id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
+            if (id == null) return NotFound();
 
             var proveedor = await _context.tblProveedors
                 .FirstOrDefaultAsync(m => m.IdProveedor == id);
-            if (proveedor == null)
-            {
-                return NotFound();
-            }
+            if (proveedor == null) return NotFound();
 
             return View(proveedor);
         }
@@ -64,8 +56,6 @@ namespace laboratorio1ElvisOrtiz160625.Controllers
         }
 
         // POST: Proveedors/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("IdProveedor,Nombre,Telefono,Direccion,Correo")] Proveedor proveedor)
@@ -83,30 +73,20 @@ namespace laboratorio1ElvisOrtiz160625.Controllers
         // GET: Proveedors/Edit/5
         public async Task<IActionResult> Edit(Guid? id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
+            if (id == null) return NotFound();
 
             var proveedor = await _context.tblProveedors.FindAsync(id);
-            if (proveedor == null)
-            {
-                return NotFound();
-            }
+            if (proveedor == null) return NotFound();
+
             return View(proveedor);
         }
 
         // POST: Proveedors/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(Guid id, [Bind("IdProveedor,Nombre,Telefono,Direccion,Correo")] Proveedor proveedor)
         {
-            if (id != proveedor.IdProveedor)
-            {
-                return NotFound();
-            }
+            if (id != proveedor.IdProveedor) return NotFound();
 
             if (ModelState.IsValid)
             {
@@ -117,14 +97,8 @@ namespace laboratorio1ElvisOrtiz160625.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!ProveedorExists(proveedor.IdProveedor))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
+                    if (!ProveedorExists(proveedor.IdProveedor)) return NotFound();
+                    else throw;
                 }
                 return RedirectToAction(nameof(Index));
             }
@@ -134,17 +108,11 @@ namespace laboratorio1ElvisOrtiz160625.Controllers
         // GET: Proveedors/Delete/5
         public async Task<IActionResult> Delete(Guid? id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
+            if (id == null) return NotFound();
 
             var proveedor = await _context.tblProveedors
                 .FirstOrDefaultAsync(m => m.IdProveedor == id);
-            if (proveedor == null)
-            {
-                return NotFound();
-            }
+            if (proveedor == null) return NotFound();
 
             return View(proveedor);
         }
@@ -158,9 +126,8 @@ namespace laboratorio1ElvisOrtiz160625.Controllers
             if (proveedor != null)
             {
                 _context.tblProveedors.Remove(proveedor);
+                await _context.SaveChangesAsync();
             }
-
-            await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
