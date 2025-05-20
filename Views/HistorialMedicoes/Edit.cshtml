@@ -1,49 +1,112 @@
 ﻿@model laboratorio1ElvisOrtiz160625.Models.HistorialMedico
 
 @{
-    ViewData["Title"] = "Edit";
+    ViewData["Title"] = "Historial Medico";
 }
 
-<h1>Edit</h1>
+<h1 class="text-center">Editar Historial Médico</h1>
 
-<h4>HistorialMedico</h4>
+<h4 class="text-center">Historial Médico</h4>
 <hr />
-<div class="row">
-    <div class="col-md-4">
+<div class="row justify-content-center">
+    <div class="col-md-6">
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="Id" />
+
             <div class="form-group">
-                <label asp-for="MascotaId" class="control-label"></label>
-                <select asp-for="MascotaId" class="form-control" asp-items="ViewBag.MascotaId"></select>
+                <label asp-for="MascotaId" class="control-label">Mascota</label>
+                <select asp-for="MascotaId" class="form-control" asp-items="ViewBag.MascotaId">
+                    <option value="">Selecciona una mascota</option>
+                </select>
                 <span asp-validation-for="MascotaId" class="text-danger"></span>
             </div>
+
             <div class="form-group">
-                <label asp-for="Fecha" class="control-label"></label>
-                <input asp-for="Fecha" class="form-control" />
+                <label asp-for="Fecha" class="control-label">Fecha</label>
+                <input asp-for="Fecha" class="form-control" type="date" />
                 <span asp-validation-for="Fecha" class="text-danger"></span>
             </div>
+
             <div class="form-group">
-                <label asp-for="Descripcion" class="control-label"></label>
-                <input asp-for="Descripcion" class="form-control" />
+                <label asp-for="Descripcion" class="control-label">Descripción</label>
+                <textarea asp-for="Descripcion" class="form-control" rows="4"></textarea>
                 <span asp-validation-for="Descripcion" class="text-danger"></span>
             </div>
+
             <div class="form-group">
-                <label asp-for="Tratamiento" class="control-label"></label>
-                <input asp-for="Tratamiento" class="form-control" />
+                <label asp-for="Tratamiento" class="control-label">Tratamiento</label>
+                <textarea asp-for="Tratamiento" class="form-control" rows="4"></textarea>
                 <span asp-validation-for="Tratamiento" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+
+            <div class="form-group text-center">
+                <input type="submit" value="Guardar" class="btn btn-success btn-lg" />
             </div>
         </form>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
+<div class="text-center">
+    <a asp-action="Index" class="btn btn-secondary">Volver a la lista</a>
 </div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }
+
+<style>
+    .form-group {
+        margin-bottom: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .control-label {
+        font-weight: bold;
+        font-size: 16px;
+        color: #333;
+    }
+
+    .form-control {
+        font-size: 15px;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ced4da;
+        transition: border-color 0.3s ease;
+    }
+
+        .form-control:focus {
+            border-color: #5cb85c; /* Verde para el borde al enfocar */
+        }
+
+    .btn-success {
+        background-color: #28a745;
+        border-color: #28a745;
+    }
+
+        .btn-success:hover {
+            background-color: #218838;
+            border-color: #1e7e34;
+        }
+
+    .btn-secondary {
+        background-color: #6c757d;
+        border-color: #6c757d;
+    }
+
+        .btn-secondary:hover {
+            background-color: #5a6268;
+            border-color: #4e555b;
+        }
+
+    .text-center {
+        text-align: center;
+    }
+
+    .row.justify-content-center {
+        margin-top: 30px;
+    }
+</style>

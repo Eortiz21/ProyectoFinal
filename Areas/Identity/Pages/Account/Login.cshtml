@@ -2,7 +2,7 @@
 @model LoginModel
 @{
     Layout = null;
-    ViewData["Title"] = "Iniciar sesión";
+    ViewData["Title"] = "Veterinaria";
 }
 <!DOCTYPE html>
 <html lang="es">
@@ -15,7 +15,8 @@
             margin: 0;
             padding: 0;
             font-family: "Segoe UI", sans-serif;
-            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            background: url('/images/background.jpg') no-repeat center center fixed;
+            background-size: cover;
             height: 100vh;
             display: flex;
             justify-content: center;
@@ -23,19 +24,27 @@
         }
 
         .login-container {
-            background: white;
+            background: #2575fc; /* Azul de fondo para el formulario */
             border-radius: 16px;
             padding: 40px 30px;
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
             width: 100%;
             max-width: 400px;
+            color: black; /* Texto en negro dentro del formulario */
         }
 
             .login-container h2 {
                 text-align: center;
                 margin-bottom: 24px;
-                color: #333;
+                color: black; /* Título en negro */
             }
+
+        .logo {
+            display: block;
+            margin: 0 auto 20px auto;
+            max-width: 150px;
+            height: auto;
+        }
 
         .form-group {
             margin-bottom: 20px;
@@ -45,16 +54,18 @@
                 display: block;
                 margin-bottom: 6px;
                 font-weight: 600;
-                color: #444;
+                color: #444; /* Etiquetas en gris oscuro */
             }
 
             .form-group input {
                 width: 100%;
                 padding: 12px;
-                border: 1px solid #ccc;
+                border: 1px solid black; /* Borde negro para los inputs */
                 border-radius: 8px;
                 outline: none;
                 font-size: 15px;
+                background: #f0f4f7; /* Fondo claro para los inputs */
+                color: black; /* Texto dentro de los inputs en negro */
             }
 
         .form-check {
@@ -70,7 +81,7 @@
         .btn-login {
             width: 100%;
             padding: 12px;
-            background: #2575fc;
+            background: #1a5edb; /* Azul más oscuro para el botón */
             border: none;
             border-radius: 8px;
             color: white;
@@ -80,7 +91,7 @@
         }
 
             .btn-login:hover {
-                background: #1a5edb;
+                background: #1261b1; /* Color al pasar el mouse */
             }
 
         .text-danger {
@@ -94,7 +105,7 @@
         }
 
             .extra-links a {
-                color: #2575fc;
+                color: #f0f4f7; /* Enlaces en blanco */
                 text-decoration: none;
                 font-size: 14px;
             }
@@ -106,6 +117,7 @@
 </head>
 <body>
     <div class="login-container">
+        <img src="/images/logo.jpg" alt="Logo" class="logo" />
         <h2>Iniciar sesión</h2>
         <form method="post" id="account">
             <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
