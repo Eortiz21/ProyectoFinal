@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using System.Collections;
 
 namespace laboratorio1ElvisOrtiz160625.Models
 {
@@ -29,6 +30,7 @@ namespace laboratorio1ElvisOrtiz160625.Models
         public DbSet<DetalleVenta> DetalleVentas { get; set; }
         public DbSet<Compra> Compras { get; set; }
         public DbSet<DetalleCompra> DetalleCompras { get; set; }
+        public IEnumerable Veterinarios { get; internal set; }
     }
 }
 

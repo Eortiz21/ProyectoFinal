@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "dXOkBJvmix0wgkdS4f3ft6XZ6AAd7vV+GBECUDGjHdU=",
+  "Hash": "GyLqLt5fd78EfCDKwkyHhZ85RvjxUgYS6YSDvEm8x3Y=",
   "Source": "laboratorio1ElvisOrtiz160625",
   "BasePath": "_content/laboratorio1ElvisOrtiz160625",
   "Mode": "Default",
@@ -1548,6 +1548,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\auth\\register-bg.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\ortiz\\Documents\\Noveno Semestre\\web\\Final\\ProyectoFinal\\wwwroot\\images\\background.jpg",
+      "SourceId": "laboratorio1ElvisOrtiz160625",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ortiz\\Documents\\Noveno Semestre\\web\\Final\\ProyectoFinal\\wwwroot\\",
+      "BasePath": "_content/laboratorio1ElvisOrtiz160625",
+      "RelativePath": "images/background#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "opxmpvlwk0",
+      "Integrity": "LDkzrfsF2F1/LF/hewNlDfU6D5Zf07YhozCeJ167H/c=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\background.jpg"
     },
     {
       "Identity": "C:\\Users\\ortiz\\Documents\\Noveno Semestre\\web\\Final\\ProyectoFinal\\wwwroot\\images\\carousel\\banner_1.jpg",
@@ -23484,6 +23505,88 @@
       ]
     },
     {
+      "Route": "images/background.jpg",
+      "AssetFile": "C:\\Users\\ortiz\\Documents\\Noveno Semestre\\web\\Final\\ProyectoFinal\\wwwroot\\images\\background.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2003331"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LDkzrfsF2F1/LF/hewNlDfU6D5Zf07YhozCeJ167H/c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 21 May 2025 02:06:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-LDkzrfsF2F1/LF/hewNlDfU6D5Zf07YhozCeJ167H/c="
+        }
+      ]
+    },
+    {
+      "Route": "images/background.opxmpvlwk0.jpg",
+      "AssetFile": "C:\\Users\\ortiz\\Documents\\Noveno Semestre\\web\\Final\\ProyectoFinal\\wwwroot\\images\\background.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2003331"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LDkzrfsF2F1/LF/hewNlDfU6D5Zf07YhozCeJ167H/c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 21 May 2025 02:06:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "opxmpvlwk0"
+        },
+        {
+          "Name": "label",
+          "Value": "images/background.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-LDkzrfsF2F1/LF/hewNlDfU6D5Zf07YhozCeJ167H/c="
+        }
+      ]
+    },
+    {
       "Route": "images/carousel/banner_1.1zyib90jir.jpg",
       "AssetFile": "C:\\Users\\ortiz\\Documents\\Noveno Semestre\\web\\Final\\ProyectoFinal\\wwwroot\\images\\carousel\\banner_1.jpg",
       "Selectors": [],
@@ -36298,7 +36401,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 17 May 2025 13:18:03 GMT"
+          "Value": "Sat, 24 May 2025 22:17:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -36335,7 +36438,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 17 May 2025 13:18:03 GMT"
+          "Value": "Sat, 24 May 2025 22:17:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -36384,7 +36487,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 17 May 2025 13:18:03 GMT"
+          "Value": "Sat, 24 May 2025 22:17:06 GMT"
         },
         {
           "Name": "Link",
@@ -36433,7 +36536,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 17 May 2025 13:18:03 GMT"
+          "Value": "Sat, 24 May 2025 22:17:06 GMT"
         },
         {
           "Name": "Link",

@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using laboratorio1ElvisOrtiz160625.Models;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.Data.SqlClient;
+using Microsoft.Extensions.Configuration;
 
 namespace laboratorio1ElvisOrtiz160625.Controllers
 {
@@ -14,10 +16,40 @@ namespace laboratorio1ElvisOrtiz160625.Controllers
     public class CitasController : Controller
     {
         private readonly ERPDbContext _context;
+        private readonly IConfiguration _configuration;
 
-        public CitasController(ERPDbContext context)
+        public CitasController(ERPDbContext context, IConfiguration configuration)
         {
             _context = context;
+            _configuration = configuration;
+        }
+
+        // Método para obtener veterinarios desde la base sin entidad modelo
+        private List<SelectListItem> GetVeterinarios()
+        {
+            var lista = new List<SelectListItem>();
+
+            string connStr = _configuration.GetConnectionString("SomeeConexion");
+            using (var connection = new SqlConnection(connStr))
+            {
+                connection.Open();
+                using (var command = new SqlCommand("SELECT IdVeterinario, Nombre FROM Veterinarios", connection))
+                {
+                    using (var reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            lista.Add(new SelectListItem
+                            {
+                                Value = reader["IdVeterinario"].ToString(),
+                                Text = reader["Nombre"].ToString()
+                            });
+                        }
+                    }
+                }
+            }
+
+            return lista;
         }
 
         // GET: Citas
@@ -30,18 +62,12 @@ namespace laboratorio1ElvisOrtiz160625.Controllers
         // GET: Citas/Details/5
         public async Task<IActionResult> Details(Guid? id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
+            if (id == null) return NotFound();
 
             var cita = await _context.Citas
                 .Include(c => c.Mascota)
                 .FirstOrDefaultAsync(m => m.IdCita == id);
-            if (cita == null)
-            {
-                return NotFound();
-            }
+            if (cita == null) return NotFound();
 
             return View(cita);
         }
@@ -50,12 +76,11 @@ namespace laboratorio1ElvisOrtiz160625.Controllers
         public IActionResult Create()
         {
             ViewData["IdMascota"] = new SelectList(_context.Mascotas, "IdMascota", "Especie");
+            ViewData["IdVeterinario"] = GetVeterinarios();
             return View();
         }
 
         // POST: Citas/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("IdCita,FechaHora,Motivo,Estado,IdMascota,IdVeterinario")] Cita cita)
@@ -68,37 +93,29 @@ namespace laboratorio1ElvisOrtiz160625.Controllers
                 return RedirectToAction(nameof(Index));
             }
             ViewData["IdMascota"] = new SelectList(_context.Mascotas, "IdMascota", "Especie", cita.IdMascota);
+            ViewData["IdVeterinario"] = GetVeterinarios();
             return View(cita);
         }
 
         // GET: Citas/Edit/5
         public async Task<IActionResult> Edit(Guid? id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
+            if (id == null) return NotFound();
 
             var cita = await _context.Citas.FindAsync(id);
-            if (cita == null)
-            {
-                return NotFound();
-            }
+            if (cita == null) return NotFound();
+
             ViewData["IdMascota"] = new SelectList(_context.Mascotas, "IdMascota", "Especie", cita.IdMascota);
+            ViewData["IdVeterinario"] = GetVeterinarios();
             return View(cita);
         }
 
         // POST: Citas/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(Guid id, [Bind("IdCita,FechaHora,Motivo,Estado,IdMascota,IdVeterinario")] Cita cita)
         {
-            if (id != cita.IdCita)
-            {
-                return NotFound();
-            }
+            if (id != cita.IdCita) return NotFound();
 
             if (ModelState.IsValid)
             {
@@ -109,36 +126,25 @@ namespace laboratorio1ElvisOrtiz160625.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!CitaExists(cita.IdCita))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
+                    if (!CitaExists(cita.IdCita)) return NotFound();
+                    else throw;
                 }
                 return RedirectToAction(nameof(Index));
             }
             ViewData["IdMascota"] = new SelectList(_context.Mascotas, "IdMascota", "Especie", cita.IdMascota);
+            ViewData["IdVeterinario"] = GetVeterinarios();
             return View(cita);
         }
 
         // GET: Citas/Delete/5
         public async Task<IActionResult> Delete(Guid? id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
+            if (id == null) return NotFound();
 
             var cita = await _context.Citas
                 .Include(c => c.Mascota)
                 .FirstOrDefaultAsync(m => m.IdCita == id);
-            if (cita == null)
-            {
-                return NotFound();
-            }
+            if (cita == null) return NotFound();
 
             return View(cita);
         }
@@ -152,9 +158,8 @@ namespace laboratorio1ElvisOrtiz160625.Controllers
             if (cita != null)
             {
                 _context.Citas.Remove(cita);
+                await _context.SaveChangesAsync();
             }
-
-            await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
