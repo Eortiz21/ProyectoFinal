@@ -2,7 +2,7 @@
 @model RegisterModel
 @{
     Layout = null;
-    ViewData["Title"] = "Registro";
+    ViewData["Title"] = "PARQUEO_MARIACHI - Registro";
 }
 <!DOCTYPE html>
 <html lang="es">
@@ -22,19 +22,19 @@
             align-items: center;
         }
 
-        .login-container {
+        .form-container {
             background: white;
             border-radius: 16px;
             padding: 40px 30px;
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
             width: 100%;
             max-width: 400px;
+            color: #333;
         }
 
-            .login-container h2 {
+            .form-container h2 {
                 text-align: center;
                 margin-bottom: 24px;
-                color: #333;
             }
 
         .form-group {
@@ -45,7 +45,6 @@
                 display: block;
                 margin-bottom: 6px;
                 font-weight: 600;
-                color: #444;
             }
 
             .form-group input {
@@ -53,11 +52,10 @@
                 padding: 12px;
                 border: 1px solid #ccc;
                 border-radius: 8px;
-                outline: none;
                 font-size: 15px;
             }
 
-        .btn-login {
+        .btn-primary {
             width: 100%;
             padding: 12px;
             background: #2575fc;
@@ -69,7 +67,7 @@
             transition: background 0.3s;
         }
 
-            .btn-login:hover {
+            .btn-primary:hover {
                 background: #1a5edb;
             }
 
@@ -86,7 +84,6 @@
             .extra-links a {
                 color: #2575fc;
                 text-decoration: none;
-                font-size: 14px;
             }
 
                 .extra-links a:hover {
@@ -95,8 +92,8 @@
     </style>
 </head>
 <body>
-    <div class="login-container">
-        <h2>Crea una cuenta nueva</h2>
+    <div class="form-container">
+        <h2>Crear cuenta</h2>
         <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
 
@@ -118,7 +115,7 @@
                 <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
             </div>
 
-            <button type="submit" class="btn-login">Registrarse</button>
+            <button type="submit" class="btn-primary">Registrarse</button>
         </form>
 
         <div class="extra-links">

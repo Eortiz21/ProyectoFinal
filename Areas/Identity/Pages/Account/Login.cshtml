@@ -2,7 +2,7 @@
 @model LoginModel
 @{
     Layout = null;
-    ViewData["Title"] = "PARQUEO_MARIACHI";
+    ViewData["Title"] = "PARQUEO_MARIACHI - Iniciar sesión";
 }
 <!DOCTYPE html>
 <html lang="es">
@@ -15,35 +15,32 @@
             margin: 0;
             padding: 0;
             font-family: "Segoe UI", sans-serif;
-            background: url('/images/background.jpg') no-repeat center center fixed;
-            background-size: cover;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
             height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
         }
 
-        .login-container {
-            background: #2575fc; /* Azul de fondo para el formulario */
+        .form-container {
+            background: white;
             border-radius: 16px;
             padding: 40px 30px;
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
             width: 100%;
             max-width: 400px;
-            color: black; /* Texto en negro dentro del formulario */
+            color: #333;
         }
 
-            .login-container h2 {
+            .form-container h2 {
                 text-align: center;
                 margin-bottom: 24px;
-                color: black; /* Título en negro */
             }
 
         .logo {
             display: block;
             margin: 0 auto 20px auto;
             max-width: 150px;
-            height: auto;
         }
 
         .form-group {
@@ -54,18 +51,14 @@
                 display: block;
                 margin-bottom: 6px;
                 font-weight: 600;
-                color: #444; /* Etiquetas en gris oscuro */
             }
 
             .form-group input {
                 width: 100%;
                 padding: 12px;
-                border: 1px solid black; /* Borde negro para los inputs */
+                border: 1px solid #ccc;
                 border-radius: 8px;
-                outline: none;
                 font-size: 15px;
-                background: #f0f4f7; /* Fondo claro para los inputs */
-                color: black; /* Texto dentro de los inputs en negro */
             }
 
         .form-check {
@@ -78,10 +71,10 @@
                 margin-right: 8px;
             }
 
-        .btn-login {
+        .btn-primary {
             width: 100%;
             padding: 12px;
-            background: #1a5edb; /* Azul más oscuro para el botón */
+            background: #2575fc;
             border: none;
             border-radius: 8px;
             color: white;
@@ -90,8 +83,8 @@
             transition: background 0.3s;
         }
 
-            .btn-login:hover {
-                background: #1261b1; /* Color al pasar el mouse */
+            .btn-primary:hover {
+                background: #1a5edb;
             }
 
         .text-danger {
@@ -105,9 +98,8 @@
         }
 
             .extra-links a {
-                color: #f0f4f7; /* Enlaces en blanco */
+                color: #2575fc;
                 text-decoration: none;
-                font-size: 14px;
             }
 
                 .extra-links a:hover {
@@ -116,7 +108,7 @@
     </style>
 </head>
 <body>
-    <div class="login-container">
+    <div class="form-container">
         <img src="/images/logo.jpg" alt="Logo" class="logo" />
         <h2>Iniciar sesión</h2>
         <form method="post" id="account">
@@ -139,7 +131,7 @@
                 <label asp-for="Input.RememberMe">@Html.DisplayNameFor(m => m.Input.RememberMe)</label>
             </div>
 
-            <button type="submit" class="btn-login">Iniciar sesión</button>
+            <button type="submit" class="btn-primary">Iniciar sesión</button>
 
             <div class="extra-links">
                 <p><a asp-page="./ForgotPassword">¿Olvidaste tu contraseña?</a></p>
