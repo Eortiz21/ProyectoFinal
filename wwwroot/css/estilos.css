@@ -1,0 +1,21 @@
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: -250px;
+}
+#sidebar-wrapper {
+  width: 250px;
+  min-height: 100vh;
+  transition: margin 0.3s ease;
+}
+#page-content-wrapper {
+  width: 100%;
+}
+/* Mejorar visual de submenús */
+#sidebar-wrapper .collapse .list-group-item {
+  transition: all 0.3s ease;
+  border-left: 3px solid #ffc107;
+}
+
+/* Íconos y texto alineados */
+.list-group-item i.bi {
+  margin-right: 8px;
+}

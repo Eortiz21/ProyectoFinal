@@ -1,19 +1,18 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using laboratorio1ElvisOrtiz160625.Models;
+using ProyectoParqueo.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-//var connectionString = builder.Configuration.GetConnectionString("ConexionLocalBD") ?? throw new InvalidOperationException("Connection string 'ConexionDesar' not found.");
-var connectionString = builder.Configuration.GetConnectionString("SomeeConexion") ?? throw new InvalidOperationException("Connection string 'ConexionDesar' not found.");
+var connectionString = builder.Configuration.GetConnectionString("ConexionLocalBD") ?? throw new InvalidOperationException("Connection string 'ConexionDesar' not found.");
+//var connectionString = builder.Configuration.GetConnectionString("SomeeConexion") ?? throw new InvalidOperationException("Connection string 'ConexionDesar' not found.");
 
 
 builder.Services.AddDbContext<ERPDbContext>(options => options.UseSqlServer(connectionString), ServiceLifetime.Transient);
 
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = false).AddEntityFrameworkStores<ERPDbContext>();
-
 
 
 

@@ -17,6 +17,12 @@ html {
   min-height: 100%;
 }
 
+
+/* Estilos personalizados opcionales */
 body {
-  margin-bottom: 60px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+footer {
+    font-size: 0.9rem;
 }
