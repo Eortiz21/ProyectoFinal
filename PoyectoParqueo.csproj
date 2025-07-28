@@ -10,21 +10,26 @@
     <PackageReference Include="Microsoft.AspNetCore.Components.Analyzers" Version="8.0.11" />
     <PackageReference Include="Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter" Version="8.0.11" />
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="8.0.11" />
-    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.13" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.18" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="8.0.11" />
     <PackageReference Include="Microsoft.Data.SqlClient" Version="6.0.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.11" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.13" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.13">
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.5">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.7" />
-    <PackageReference Include="System.Text.Json" Version="8.0.5" />
+    <PackageReference Include="System.Text.Json" Version="9.0.7" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Data\" />
+    <Folder Include="wwwroot\Imagenes\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Imagenes\Auto.png" />
   </ItemGroup>
 
 </Project>

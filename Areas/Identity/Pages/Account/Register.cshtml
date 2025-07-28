@@ -8,82 +8,129 @@
 <html lang="es">
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>@ViewData["Title"]</title>
     <style>
+        /* Reset básico */
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             margin: 0;
-            padding: 0;
-            font-family: "Segoe UI", sans-serif;
-            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            background-color: #1f436b; /* azul oscuro */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             height: 100vh;
+            color: #1f436b;
+        }
+
+        .form-wrapper {
+            background-color: #f9fafb; /* blanco grisáceo */
+            border-radius: 16px;
+            padding: 32px 40px 40px;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+            width: 360px;
+            text-align: center;
+            position: relative;
+        }
+
+        /* Logo Container */
+        .logo-container {
+            width: 72px;
+            height: 72px;
+            margin: 0 auto 16px auto;
+            background-color: #1f436b; /* azul oscuro */
+            border-radius: 12px;
             display: flex;
             justify-content: center;
             align-items: center;
         }
 
-        .form-container {
-            background: white;
-            border-radius: 16px;
-            padding: 40px 30px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-            width: 100%;
-            max-width: 400px;
-            color: #333;
+            .logo-container img {
+                max-width: 48px;
+                max-height: 48px;
+            }
+
+        h2 {
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin-bottom: 24px;
         }
 
-            .form-container h2 {
-                text-align: center;
-                margin-bottom: 24px;
-            }
+        form {
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+        }
 
         .form-group {
-            margin-bottom: 20px;
+            margin-bottom: 16px;
         }
 
-            .form-group label {
-                display: block;
-                margin-bottom: 6px;
-                font-weight: 600;
-            }
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: 600;
+            color: #1f436b;
+        }
 
-            .form-group input {
-                width: 100%;
-                padding: 12px;
-                border: 1px solid #ccc;
-                border-radius: 8px;
-                font-size: 15px;
-            }
-
-        .btn-primary {
+        input[type="email"],
+        input[type="password"] {
             width: 100%;
-            padding: 12px;
-            background: #2575fc;
-            border: none;
-            border-radius: 8px;
-            color: white;
-            font-size: 16px;
-            cursor: pointer;
-            transition: background 0.3s;
+            padding: 12px 16px;
+            border: 1.5px solid #d2d6dc; /* gris claro */
+            border-radius: 10px;
+            font-size: 1rem;
+            color: #1f436b;
+            outline-offset: 2px;
+            transition: border-color 0.3s;
         }
 
-            .btn-primary:hover {
-                background: #1a5edb;
+            input[type="email"]:focus,
+            input[type="password"]:focus {
+                border-color: #1f436b; /* azul oscuro */
+                outline: none;
             }
 
         .text-danger {
-            color: red;
-            font-size: 13px;
+            color: #e74c3c;
+            font-size: 0.85rem;
+            margin-top: 4px;
+            display: block;
         }
+
+        button.btn-primary {
+            background-color: #1f436b; /* azul oscuro */
+            color: white;
+            padding: 12px 0;
+            font-weight: 600;
+            font-size: 1rem;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 12px;
+        }
+
+            button.btn-primary:hover {
+                background-color: #163756; /* azul más oscuro */
+            }
 
         .extra-links {
             text-align: center;
-            margin-top: 16px;
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #1f436b;
         }
 
             .extra-links a {
-                color: #2575fc;
+                color: #1f436b;
                 text-decoration: none;
+                font-weight: 600;
+                transition: text-decoration 0.2s;
             }
 
                 .extra-links a:hover {
@@ -92,9 +139,13 @@
     </style>
 </head>
 <body>
-    <div class="form-container">
+    <div class="form-wrapper">
+        <div class="logo-container">
+            <img src="/imagenes/Auto.png" alt="Logo Parqueo" />
+        </div>
         <h2>Crear cuenta</h2>
-        <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post">
+
+        <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post" novalidate>
             <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
 
             <div class="form-group">
