@@ -1,26 +1,164 @@
 ﻿@page
 @model ResendEmailConfirmationModel
 @{
-    ViewData["Title"] = "Resend email confirmation";
+    Layout = null;
+    ViewData["Title"] = "PARQUEO_MARIACHI - Confirmar correo";
 }
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>@ViewData["Title"]</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
 
-<h1>@ViewData["Title"]</h1>
-<h2>Enter your email.</h2>
-<hr />
-<div class="row">
-    <div class="col-md-4">
+        body {
+            margin: 0;
+            background-color: #1f436b;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #1f436b;
+        }
+
+        .form-wrapper {
+            background-color: #f9fafb;
+            border-radius: 16px;
+            padding: 32px 40px 40px;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+            width: 360px;
+            text-align: center;
+            position: relative;
+        }
+
+        .logo-container {
+            width: 72px;
+            height: 72px;
+            margin: 0 auto 16px auto;
+            background-color: #1f436b;
+            border-radius: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+            .logo-container img {
+                max-width: 48px;
+                max-height: 48px;
+            }
+
+        h2 {
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin-bottom: 24px;
+        }
+
+        form {
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group {
+            margin-bottom: 16px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: 600;
+            color: #1f436b;
+        }
+
+        input[type="email"] {
+            width: 100%;
+            padding: 12px 16px;
+            border: 1.5px solid #d2d6dc;
+            border-radius: 10px;
+            font-size: 1rem;
+            color: #1f436b;
+            outline-offset: 2px;
+            transition: border-color 0.3s;
+        }
+
+            input[type="email"]:focus {
+                border-color: #1f436b;
+                outline: none;
+            }
+
+        .text-danger {
+            color: #e74c3c;
+            font-size: 0.85rem;
+            margin-top: 4px;
+            display: block;
+        }
+
+        button.btn-primary {
+            background-color: #1f436b;
+            color: white;
+            padding: 12px 0;
+            font-weight: 600;
+            font-size: 1rem;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 12px;
+        }
+
+            button.btn-primary:hover {
+                background-color: #163756;
+            }
+
+        .extra-links {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #1f436b;
+        }
+
+            .extra-links a {
+                color: #1f436b;
+                text-decoration: none;
+                font-weight: 600;
+            }
+
+                .extra-links a:hover {
+                    text-decoration: underline;
+                }
+    </style>
+</head>
+<body>
+    <div class="form-wrapper">
+        <div class="logo-container">
+            <img src="/imagenes/Auto.png" alt="Logo Parqueo" />
+        </div>
+        <h2>Reenviar confirmación</h2>
+
         <form method="post">
             <div asp-validation-summary="All" class="text-danger" role="alert"></div>
-            <div class="form-floating mb-3">
-                <input asp-for="Input.Email" class="form-control" aria-required="true" placeholder="name@example.com" />
-                <label asp-for="Input.Email" class="form-label"></label>
+
+            <div class="form-group">
+                <label asp-for="Input.Email">Correo electrónico</label>
+                <input asp-for="Input.Email" type="email" placeholder="correo@ejemplo.com" autocomplete="email" />
                 <span asp-validation-for="Input.Email" class="text-danger"></span>
             </div>
-            <button type="submit" class="w-100 btn btn-lg btn-primary">Resend</button>
-        </form>
-    </div>
-</div>
 
-@section Scripts {
-    <partial name="_ValidationScriptsPartial" />
-}
+            <button type="submit" class="btn-primary">Reenviar</button>
+        </form>
+
+        <div class="extra-links">
+            <p><a asp-page="./Login">¿Volver al inicio de sesión?</a></p>
+        </div>
+    </div>
+
+    @section Scripts {
+        <partial name="_ValidationScriptsPartial" />
+    }
+</body>
+</html>
