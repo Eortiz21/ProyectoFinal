@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "3jMJUCJWmSkxCosm+rPO97CMbRNKW7eAGrNB892DDfc=",
+  "Hash": "poOsIopfcyIJvkVXSHvtKkdapmY1QXW75m5d4PeDKOc=",
   "Source": "PoyectoParqueo",
   "BasePath": "_content/PoyectoParqueo",
   "Mode": "Default",
@@ -1396,8 +1396,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "xu4cewzka7",
-      "Integrity": "mSFmq1N6fW460BOTIX1atmdprwWnd8EFu4iEPieoUxM=",
+      "Fingerprint": "showjvi603",
+      "Integrity": "AE2Xi5q+GPnb5GXYJLfCJPjgZ7ikPM2FV4eYiU5n7Tc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -1443,6 +1443,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Imagenes\\Auto.png"
+    },
+    {
+      "Identity": "C:\\Users\\ortiz\\Documents\\10 semestre\\047 SEMINARIO DE TECNOLOGÍAS DE INFORMACIÓN\\ProyectoFinal\\SEMINARIO\\wwwroot\\Imagenes\\UMG.png",
+      "SourceId": "PoyectoParqueo",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ortiz\\Documents\\10 semestre\\047 SEMINARIO DE TECNOLOGÍAS DE INFORMACIÓN\\ProyectoFinal\\SEMINARIO\\wwwroot\\",
+      "BasePath": "_content/PoyectoParqueo",
+      "RelativePath": "Imagenes/UMG#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "o6jq4p0vs6",
+      "Integrity": "YNQOzk1yTuy3gEfHXToYFuchYYxrDN9es2XTau2fIRE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Imagenes\\UMG.png"
     },
     {
       "Identity": "C:\\Users\\ortiz\\Documents\\10 semestre\\047 SEMINARIO DE TECNOLOGÍAS DE INFORMACIÓN\\ProyectoFinal\\SEMINARIO\\wwwroot\\js\\funciones.js",
@@ -2852,7 +2873,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2335"
+          "Value": "3148"
         },
         {
           "Name": "Content-Type",
@@ -2860,11 +2881,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"mSFmq1N6fW460BOTIX1atmdprwWnd8EFu4iEPieoUxM=\""
+          "Value": "\"AE2Xi5q+GPnb5GXYJLfCJPjgZ7ikPM2FV4eYiU5n7Tc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 28 Jul 2025 02:36:17 GMT"
+          "Value": "Tue, 29 Jul 2025 03:45:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2874,12 +2895,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-mSFmq1N6fW460BOTIX1atmdprwWnd8EFu4iEPieoUxM="
+          "Value": "sha256-AE2Xi5q+GPnb5GXYJLfCJPjgZ7ikPM2FV4eYiU5n7Tc="
         }
       ]
     },
     {
-      "Route": "css/site.xu4cewzka7.css",
+      "Route": "css/site.showjvi603.css",
       "AssetFile": "C:\\Users\\ortiz\\Documents\\10 semestre\\047 SEMINARIO DE TECNOLOGÍAS DE INFORMACIÓN\\ProyectoFinal\\SEMINARIO\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2889,7 +2910,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2335"
+          "Value": "3148"
         },
         {
           "Name": "Content-Type",
@@ -2897,11 +2918,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"mSFmq1N6fW460BOTIX1atmdprwWnd8EFu4iEPieoUxM=\""
+          "Value": "\"AE2Xi5q+GPnb5GXYJLfCJPjgZ7ikPM2FV4eYiU5n7Tc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 28 Jul 2025 02:36:17 GMT"
+          "Value": "Tue, 29 Jul 2025 03:45:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2911,7 +2932,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "xu4cewzka7"
+          "Value": "showjvi603"
         },
         {
           "Name": "label",
@@ -2919,7 +2940,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-mSFmq1N6fW460BOTIX1atmdprwWnd8EFu4iEPieoUxM="
+          "Value": "sha256-AE2Xi5q+GPnb5GXYJLfCJPjgZ7ikPM2FV4eYiU5n7Tc="
         }
       ]
     },
@@ -5308,6 +5329,88 @@
       ]
     },
     {
+      "Route": "Imagenes/UMG.o6jq4p0vs6.png",
+      "AssetFile": "C:\\Users\\ortiz\\Documents\\10 semestre\\047 SEMINARIO DE TECNOLOGÍAS DE INFORMACIÓN\\ProyectoFinal\\SEMINARIO\\wwwroot\\Imagenes\\UMG.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "149330"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YNQOzk1yTuy3gEfHXToYFuchYYxrDN9es2XTau2fIRE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 30 Jul 2025 02:20:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "o6jq4p0vs6"
+        },
+        {
+          "Name": "label",
+          "Value": "Imagenes/UMG.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-YNQOzk1yTuy3gEfHXToYFuchYYxrDN9es2XTau2fIRE="
+        }
+      ]
+    },
+    {
+      "Route": "Imagenes/UMG.png",
+      "AssetFile": "C:\\Users\\ortiz\\Documents\\10 semestre\\047 SEMINARIO DE TECNOLOGÍAS DE INFORMACIÓN\\ProyectoFinal\\SEMINARIO\\wwwroot\\Imagenes\\UMG.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "149330"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YNQOzk1yTuy3gEfHXToYFuchYYxrDN9es2XTau2fIRE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 30 Jul 2025 02:20:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-YNQOzk1yTuy3gEfHXToYFuchYYxrDN9es2XTau2fIRE="
+        }
+      ]
+    },
+    {
       "Route": "js/funciones.c91y1wuuqr.js",
       "AssetFile": "C:\\Users\\ortiz\\Documents\\10 semestre\\047 SEMINARIO DE TECNOLOGÍAS DE INFORMACIÓN\\ProyectoFinal\\SEMINARIO\\wwwroot\\js\\funciones.js",
       "Selectors": [],
@@ -5412,7 +5515,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 28 Jul 2025 01:31:22 GMT"
+          "Value": "Tue, 29 Jul 2025 03:47:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5449,7 +5552,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 28 Jul 2025 01:31:22 GMT"
+          "Value": "Tue, 29 Jul 2025 03:47:16 GMT"
         },
         {
           "Name": "Cache-Control",

@@ -56,14 +56,14 @@
         <div id="page-content-wrapper" class="flex-grow-1">
 
             <!-- Navbar superior -->
-            <!-- Botón para toggle del menú -->
-            <button id="sidebar-toggle-btn" class="btn me-2" title="Mostrar/Ocultar menú">
-                <i class="bi bi-list"></i>
-            </button>
+
             <header>
                 <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom shadow-sm">
                     <div class="container-fluid">
-                       
+                        <!-- Botón para toggle del menú -->
+                        <button id="sidebar-toggle-btn" class="btn me-2" title="Mostrar/Ocultar menú">
+                            <i class="bi bi-list"></i>
+                        </button>
 
                         <a class="navbar-brand fw-bold" asp-controller="Home" asp-action="Index">Parqueo</a>
 
@@ -79,7 +79,14 @@
                                 <li class="nav-item">
                                     <a class="nav-link" asp-controller="Home" asp-action="Privacy">Privacidad</a>
                                 </li>
+                                <!-- Barra de búsqueda -->
+                                <form class="d-flex me-2" role="search" method="get" asp-controller="Home" asp-action="Search">
+                                    <input class="form-control form-control-sm me-2" type="search" name="query" placeholder="Buscar..." aria-label="Buscar">
+                                    <button class="btn btn-outline-success btn-sm" type="submit">Buscar</button>
+                                </form>
                             </ul>
+
+                         
 
                             <!-- Botón de cambio de tema -->
                             <button id="themeToggle" class="btn btn-outline-secondary me-2" title="Cambiar tema">
@@ -119,8 +126,14 @@
 
             <!-- Footer -->
             <footer class="footer mt-auto py-3 border-top text-muted">
-                <div class="container">
-                    &copy; 2025 - Parqueo - <a asp-controller="Home" asp-action="Privacy">Privacidad</a>
+                <div class="container d-flex justify-content-between align-items-center">
+                    <div>
+                        <img src="~/imagenes/UMG.png" alt="Logo Parqueo" style="height: 40px;">
+                    </div>
+                    <div>
+                        &copy; 2025 - Parqueo - <a asp-controller="Home" asp-action="Privacy">Privacidad</a>
+                    </div>
+                   
                 </div>
             </footer>
         </div>

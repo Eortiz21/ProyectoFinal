@@ -8,7 +8,11 @@ namespace Laboratorio1AdmonTIC.Controllers
     [Authorize]
     public class HomeController : Controller
     {
-
+        public IActionResult Dashboard()
+        {
+            // Aquí puedes enviar datos para mostrar en el dashboard
+            return View();
+        }
         private readonly ILogger<HomeController> _logger;
 
         public HomeController(ILogger<HomeController> logger)
