@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using PoyectoParqueo.Models;
 
 namespace ProyectoParqueo.Models
 {
@@ -11,6 +12,13 @@ namespace ProyectoParqueo.Models
             : base(options)
         {
         }
+
+        public DbSet<Cliente> Clientes { get; set; }
+        public DbSet<Vehiculo> Vehiculos { get; set; }
+        public DbSet<EspacioEstacionamiento> EspaciosEstacionamiento { get; set; }
+        public DbSet<Tarifa> Tarifas { get; set; }
+        public DbSet<Ticket> Tickets { get; set; }
+        public DbSet<Pago> Pagos { get; set; }
         public class DashboardController : Controller
         {
             public IActionResult Index()

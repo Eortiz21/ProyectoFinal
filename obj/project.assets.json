@@ -7993,11 +7993,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ortiz\\Documents\\10 semestre\\047 SEMINARIO DE TECNOLOGÍAS DE INFORMACIÓN\\ProyectoFinal\\SEMINARIO\\PoyectoParqueo.csproj",
+      "projectUniqueName": "C:\\Users\\ortiz\\Documents\\10 semestre\\047 SEMINARIO DE TECNOLOGÍAS DE INFORMACIÓN\\ProyectoFinal\\SEMINARIO\\ProyectoFinal\\PoyectoParqueo.csproj",
       "projectName": "PoyectoParqueo",
-      "projectPath": "C:\\Users\\ortiz\\Documents\\10 semestre\\047 SEMINARIO DE TECNOLOGÍAS DE INFORMACIÓN\\ProyectoFinal\\SEMINARIO\\PoyectoParqueo.csproj",
+      "projectPath": "C:\\Users\\ortiz\\Documents\\10 semestre\\047 SEMINARIO DE TECNOLOGÍAS DE INFORMACIÓN\\ProyectoFinal\\SEMINARIO\\ProyectoFinal\\PoyectoParqueo.csproj",
       "packagesPath": "C:\\Users\\ortiz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ortiz\\Documents\\10 semestre\\047 SEMINARIO DE TECNOLOGÍAS DE INFORMACIÓN\\ProyectoFinal\\SEMINARIO\\obj\\",
+      "outputPath": "C:\\Users\\ortiz\\Documents\\10 semestre\\047 SEMINARIO DE TECNOLOGÍAS DE INFORMACIÓN\\ProyectoFinal\\SEMINARIO\\ProyectoFinal\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
